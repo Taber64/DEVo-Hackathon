@@ -75,8 +75,8 @@
     {
       "shakeAttrID" : 2,
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/c_crop,h_385,w_770,x_0,y_0/v1472687788/Orange_Creamsicle_Shakeology.jpg",
-        "shakeName": "Orange Creamsicle Shakeology",
-        "shakeAddons": ["½ cup unsweetened almond milk (or low-fat milk)", "½ cup 100% orange juice", "1 cup ice"],
+        "shakeName": "Fudge Creamsicle Shakeology",
+        "shakeAddons": ["½ cup unsweetened almond milk (or low-fat milk)", "½ cup 100% fudge juice", "1 cup ice"],
         "shakeNutrition": {
           "calories": "227",
           "fat": "2",

@@ -11,8 +11,22 @@
 
  	$http.get('../js/mock/shakeData.json').then(function(results){
  		console.log(results);
- 		$scope.team = results.data;
- 		console.log($scope.team);
+ 		$scope.shakes = results.data;
+ 		var temp = [], old_attr;
+
+ 		angular.forEach($scope.shakes, function(key, value){
+            console.log("Key: " + key + " Value: " + value);
+
+            console.log(key.shakeAttributes);
+
+            temp.push(key.shakeAttributes);
+
+            console.log("Temp attrs: " + key.shakeAttributes);
+
+ 		});
+ 		    $scope.attrs = temp[0];
+ 		    console.log(typeof $scope.attrs);
+            console.log("Attrs: " + $scope.attrs);
  		
  	}).catch(function(errors){
  		console.log("Error occurred");

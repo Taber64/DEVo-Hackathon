@@ -1,0 +1,19 @@
+<div class="search-bar">
+	<input type="search" placeholder="Search" ng-model="search.$">
+</div>
+<ul>
+		
+		<li ng-repeat="x in attrs | filter:search">
+			{{x.shakeName}}
+		</li>
+		
+</ul>
+
+<!--
+	<ul ng-show="(teamSearch = (team | filter:query)) && teamSearch.length >= 3 && query && query.length >= 2">
+	<li ng-repeat="x in team | filter:query">
+		{{x.name}}
+		{{x.Address}}
+	</li>
+</ul>
+-->
