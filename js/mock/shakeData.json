@@ -1,0 +1,99 @@
+[
+  {
+  "shakeID" : 1,
+    "shakeFlavor": "Vanilla Shakeology",
+    "shakeAttributes": [
+        { 
+        "shakeAttrID" : 1,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/c_crop,h_385,w_770,x_0,y_0/v1475711719/Oatmeal_Raisin_Cookie_Shakeology.jpg",
+        "shakeName": "Oatmeal Raisin Cookie Shakeology",
+        "shakeAddons": ["1 cup unsweetened almond milk", "2 Tbsp. dry old-fashioned rolled oats", "½ tsp. ground cinnamon", "1 Tbsp. raisins", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "238",
+          "fat": "6",
+          "satFat": "0",
+          "cholesterol": "5",
+          "sodium": "387",
+          "carbs": "31",
+          "fiber": "6",
+          "sugars": "12",
+          "protein": "19"
+        },
+        "shakeXX": ["1 Protein", "½ Single Serving Snack", "1 Fruit"],
+        "shakeX3": ["½ Carb", "1 Protein", ""],
+        "shakeBB": ["1 Protein Liquid","1 Carb Liquid","1 Balanced Liquid"],
+        "shakeContainer": ["1 Yellow", "1 Red", ""]
+    }, 
+    {
+      "shakeAttrID" : 2,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/c_crop,h_385,w_770,x_0,y_0/v1472687788/Orange_Creamsicle_Shakeology.jpg",
+        "shakeName": "Orange Creamsicle Shakeology",
+        "shakeAddons": ["½ cup unsweetened almond milk (or low-fat milk)", "½ cup 100% orange juice", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "227",
+          "fat": "2",
+          "satFat": "0",
+          "cholesterol": "7",
+          "sodium": "258",
+          "carbs": "33",
+          "fiber": "3",
+          "sugars": "24",
+          "protein": "21"
+        },
+        "shakeXX": ["1 Protein", "½ Single Serving Snack", "1 Fruit"],
+        "shakeX3": ["1 ½ Carb", "1 Protein", ""],
+        "shakeBB": ["1 Protein Liquid","1 Carb Liquid","1 Balanced Liquid"],
+        "shakeContainer": ["1 Yellow", "1 Red", ""]
+    }
+  ]
+ },
+ {
+  "shakeID" : 2,
+    "shakeFlavor": "Chocolate",
+    "shakeAttributes": [
+        { 
+        "shakeAttrID" : 1,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/v1459388315/Chocolate-Caramel-Delight-Smoothie-in-post.jpg",
+        "shakeName": "Chocolate Caramel Delight Smoothie",
+        "shakeAddons": ["1 cup unsweetened almond milk", "1 tsp. pure caramel extract", "2 Tbsp. shredded unsweetened coconut, toasted", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "281",
+          "fat": "12",
+          "satFat": "7",
+          "cholesterol": "0",
+          "sodium": "340",
+          "carbs": "22",
+          "fiber": "9",
+          "sugars": "7",
+          "protein": "19"
+        },
+        "shakeXX": ["1 Protein", "½ Single Serving Snack", "1 Fat"],
+        "shakeX3": ["½ Carb", "1 ½ Protein", "2 Fats"],
+        "shakeBB": ["1 Protein Liquid","2 Fats","2 Balanced Liquid"],
+        "shakeContainer": ["½ Yellow", "1 Red", "1 orange"]
+    }, 
+    {
+      "shakeAttrID" : 2,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/c_crop,h_385,w_770,x_0,y_0/v1472687788/Orange_Creamsicle_Shakeology.jpg",
+        "shakeName": "Orange Creamsicle Shakeology",
+        "shakeAddons": ["½ cup unsweetened almond milk (or low-fat milk)", "½ cup 100% orange juice", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "227",
+          "fat": "2",
+          "satFat": "0",
+          "cholesterol": "7",
+          "sodium": "258",
+          "carbs": "33",
+          "fiber": "3",
+          "sugars": "24",
+          "protein": "21"
+        },
+        "shakeXX": ["1 Protein", "½ Single Serving Snack", "1 Fruit"],
+        "shakeX3": ["1 ½ Carb", "1 Protein", ""],
+        "shakeBB": ["1 Protein Liquid","1 Carb Liquid","1 Balanced Liquid"],
+        "shakeContainer": ["1 Yellow", "1 Red", ""]
+    }
+  ]
+ }
+
+]

@@ -1,0 +1,38 @@
+[{
+ 	"name": "Samuel Richardson",
+ 	"Address": "3301 W.Main St",
+ 	"City": "Santa Clarita",
+ 	"State": "CA",
+ 	"Phone": "923 0239 2302",
+ 	"zipCode": "82922"
+ },
+ {
+ 	"name": "Philip Emokpare",
+ 	"Address": "4011 W.Main St",
+ 	"City": "Santa Monica",
+ 	"State": "CA",
+ 	"Phone": "501 0239 2302",
+ 	"zipCode": "90232"
+ },
+ {
+ 	"name": "Kevin Taber",
+ 	"Address": "5501 W.Main St",
+ 	"City": "Malibu",
+ 	"State": "CA",
+ 	"Phone": "500 0239 2302"
+ },
+ {
+ 	"name": "David Padilla",
+ 	"Address": "4401 W.Main St",
+ 	"City": "Manhattan",
+ 	"State": "NY",
+ 	"Phone": "923 0239 2302"
+ },
+ {
+ 	"name": "Yuliya Bahalmoskaya",
+ 	"Address": "3301 W.Main St",
+ 	"City": "Santa Clara",
+ 	"State": "CA",
+ 	"Phone": "803 0239 2302"
+ }
+ ]
