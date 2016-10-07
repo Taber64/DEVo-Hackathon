@@ -1,6 +1,8 @@
-<h4> Main Recipe Details page</h4>
-<p>{{BBrecipeToDisplay.shakeType}}</p>
-<p>{{BBrecipeToDisplay.shakeName}}</p>
-<p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
-<p ng-repeat="d in BBrecipeToDisplay.shakeNutrition">{{d}}</p>
-<p>@TonyHorton</p>
+<div ng-include="'header.html'"></div>
+<div class="container">
+  <p>{{BBrecipeToDisplay.shakeType}}</p>
+  <p>{{BBrecipeToDisplay.shakeName}}</p>
+  <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
+  <p ng-repeat="d in BBrecipeToDisplay.shakeNutrition">{{d}}</p>
+</div>
+<div ng-include="'nav.html'"></div>
