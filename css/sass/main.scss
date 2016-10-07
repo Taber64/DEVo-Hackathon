@@ -6,212 +6,212 @@ $dark-gray: #657786;
 $border-color: #dfdfdf;
 
 @mixin containerStyles {
-	width: 100%;
-	max-width: 768px;
-	margin: 0 auto;
-	padding: 10px;
-	box-sizing: border-box;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 @mixin listStyles {
-	background: #f6f6f8;
-	border-bottom: 1px solid $border-color;
+  background: #f6f6f8;
+  border-bottom: 1px solid $border-color;
 
-	@media (min-width: 768px) {
-		border-right: 1px solid $border-color;
-		border-left: 1px solid $border-color;
-	}
+  @media (min-width: 768px) {
+    border-right: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+  }
 }
 
 body {
-	font-family: 'Work Sans', Arial, sans-serif;
-	font-size: 16px;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 16px;
 }
 
 .container {
-	width: 100%;
-	max-width: 768px;
-	margin: 0 auto 75px;
-	box-sizing: border-box;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto 75px;
+  box-sizing: border-box;
 
-	img {
-		max-width: 100%;
-	}
+  img {
+    max-width: 100%;
+  }
 
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	vertical-align: top;
-	border: 0;
-	-webkit-appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  border: 0;
+  -webkit-appearance: none;
 
-	&.icon {
-		
-		svg {
-			height: 24px;
-		}
+  &.icon {
+    
+    svg {
+      height: 24px;
+    }
 
-	}
+  }
 
 }
 
 header {
-	display: block;
-	position: relative;
-	background: #efefef;
-	height: 52px;
-	box-shadow: 0 2px 2px #79a668;
-	box-sizing: border-box;
-	z-index: 10;
+  display: block;
+  position: relative;
+  background: #efefef;
+  height: 52px;
+  box-shadow: 0 2px 2px #aaa;
+  box-sizing: border-box;
+  z-index: 10;
 
-	.container {
-		@include containerStyles;
-		padding: 8px;
-	}
+  .container {
+    @include containerStyles;
+    padding: 8px;
+  }
 
-	button {
-		width: 36px;
-		height: 36px;
-		border-radius: 50%;
-	}
+  button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
 
-	button.home {
-		background: $dark-gray;
+  button.home {
+    background: $dark-gray;
 
-		svg {
-			fill: #fff;
-			height: 19px;
-		}
+    svg {
+      fill: #fff;
+      height: 19px;
+    }
 
-	}
+  }
 
-	button.user {
-		float: right;
-		border: 2px solid $green;
+  button.user {
+    float: right;
+    border: 2px solid $green;
 
-		img {
-			width: 100%;
-		}
-		
-	}
+    img {
+      width: 100%;
+    }
+    
+  }
 
 }
 
 .logo {
-	display: inline-block;
-	width: calc( 100% - 78px );
+  display: inline-block;
+  width: calc( 100% - 78px );
 
-	img {
-		display: block;
-		width: 62%;
-		max-width: 206px;
-		max-height: 38px;
-		margin: 0 auto;
-	}
+  img {
+    display: block;
+    width: 62%;
+    max-width: 206px;
+    max-height: 38px;
+    margin: 0 auto;
+  }
 
 }
 
 nav.bottom {
-	position: fixed;
-	background: #efefef;
-	bottom: 0;
-	width: 100%;
-	height: 52px;
-	border-top: 1px solid $border-color;
+  position: fixed;
+  background: #efefef;
+  bottom: 0;
+  width: 100%;
+  height: 52px;
+  border-top: 1px solid $border-color;
 
-	.container {
-		@include containerStyles;
-		padding: 0;
-	}
+  .container {
+    @include containerStyles;
+    padding: 0;
+  }
 
-	a {
-		display: inline-block;
-		width: 32.2%;
-	}
+  a {
+    display: inline-block;
+    width: 32.2%;
+  }
 
-	button {
-		background: transparent;
-		width: 100%;
-		padding: 5px;
-		font-size: 0.8em;
-		color: $dark-gray;
-		box-sizing: border-box;
+  button {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 0.8em;
+    color: $dark-gray;
+    box-sizing: border-box;
 
-		svg {
-			display: block;
-			margin: 0 auto 5px;
-			fill: $dark-gray;
-		}
+    svg {
+      display: block;
+      margin: 0 auto 5px;
+      fill: $dark-gray;
+    }
 
-		&.active {
-			color: $green;
+    &.active {
+      color: $green;
 
-			svg {
-				fill: $green;
-			}
-			
-		}
+      svg {
+        fill: $green;
+      }
+      
+    }
 
-	}
+  }
 
 }
 
 .heading {
-	display: block;
-	background: $green;
-	height: 52px;
-	margin: 0;
-	padding: 13px 0;
-	font-size: 1.4em;
-	font-weight: 600;
-	color: #fff;
-	letter-spacing: 0.01em;
-	text-align: center;
-	box-sizing: border-box;
+  display: block;
+  background: $green;
+  height: 52px;
+  margin: 0;
+  padding: 13px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.01em;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .search-bar {
-	width: 100%;
-	margin: 15px 0;
+  width: 100%;
+  margin: 15px 0;
 }
 
 input[type="text"],
 input[type="search"] {
-	display: block;
-	background: #e4f6de;
-	width: 96%;
-	margin: 0 auto;
-	padding: 15px 25px;
-	border: 0;
-	border-radius: 40px;
-	box-shadow: inset 0 2px 2px #79a668;
-	box-sizing: border-box;
+  display: block;
+  background: #e4f6de;
+  width: 96%;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 40px;
+  box-shadow: inset 0 2px 2px #79a668;
+  box-sizing: border-box;
 }
 
 input[type="search"] {
-	background: #e4f6de url('../img/icon-search.svg') no-repeat 94% center;
-	background-size: auto 50%;
+  background: #e4f6de url('../img/icon-search.svg') no-repeat 94% center;
+  background-size: auto 50%;
 }
 
 button:focus,
 input:focus {
-	outline: none;
+  outline: none;
 }
 
 p.results-message {
-	@include containerStyles;
-	color: $green;
+  @include containerStyles;
+  color: $green;
 }
 
 .shake-margin {
-	margin: 0 0 15px;
+  margin: 0 0 15px;
 }
 .shake {
   font-size: 16px;
@@ -262,10 +262,10 @@ p.results-message {
   }
 }
 .recipe-container {
-	padding: 10px;
+  padding: 10px;
 }
 .nutrition-light {
-	font-weight: 100;
+  font-weight: 100;
 }
 
 @import "create";
