@@ -9,8 +9,8 @@
 	<div class="recipe">
 		<p><strong>Name:</strong> {{personalizedShakeName}}</p>
 		<p><strong>Ingredients:</strong></p>
-		<p class="ingredient-review">1 scoop {{flavorChoice}}</p>
-		<p ng-show="hasEnhancement" class="ingredient-review">1 scoop {{enhancement}}</p>
+		<p class="ingredient-review">1 scoop <span class="flavor-span">{{flavorChoice}}</span></p>
+		<p class="ingredient-review">1 scoop {{enhancementChoice}}</p>
 		<p ng-repeat="x in extras" class="ingredient-review">{{x}}</p>
 		<p><strong>Calories:</strong> {{calories}}</p>
 		<p><strong>Nutrition Facts:</strong> {{nutritionFacts}}</p>

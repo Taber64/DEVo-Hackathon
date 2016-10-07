@@ -69,6 +69,7 @@ ul.review {
 	}
 
 	.skip {
+		display: block;
 		color: $dark-gray;
 		text-decoration: underline;
 	}
@@ -78,4 +79,8 @@ ul.review {
 .error {
 	color: red;
 	text-align: left;
+}
+
+span.flavor-span {
+	text-transform: capitalize;
 }
