@@ -159,15 +159,20 @@ p.results-message {
     border-right: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf; } }
 .shake__container--chocolate {
-  background: #f6f6f8 url("../img/shakeology-chocolate.png") no-repeat left 10px; }
+  background: #f6f6f8 url("../img/shakeology-chocolate.png") no-repeat left;
+  background-position: 10px 50%; }
 .shake__container--vanilla {
-  background: #f6f6f8 url("../img/shakeology-vanilla.png") no-repeat left; }
+  background: #f6f6f8 url("../img/shakeology-vanilla.png") no-repeat left;
+  background-position: 10px 50%; }
 .shake__container--greenberry {
-  background: #f6f6f8 url("../img/shakeology-greenberry.png") no-repeat left; }
+  background: #f6f6f8 url("../img/shakeology-greenberry.png") no-repeat left;
+  background-position: 10px 50%; }
 .shake__container--strawberry {
-  background: #f6f6f8 url("../img/shakeology-strawberry.png") no-repeat left; }
+  background: #f6f6f8 url("../img/shakeology-strawberry.png") no-repeat left;
+  background-position: 10px 50%; }
 .shake__container--latte {
-  background: #f6f6f8 url("../img/shakeology-cafe-latte.png") no-repeat left; }
+  background: #f6f6f8 url("../img/shakeology-cafe-latte.png") no-repeat left;
+  background-position: 10px 50%; }
 .shake__name {
   color: #33392d;
   margin: 0 0 5px 0; }
@@ -187,8 +192,31 @@ p.results-message {
   padding-left: 20px;
   margin-left: 25px; }
 
-.recipe-container {
+.recipe {
   padding: 10px; }
+.recipe__container {
+  padding: 10px 10px 10px 65px; }
+.recipe__container--chocolate {
+  background: url("../img/shakeology-chocolate.png") no-repeat left;
+  background-position: 0  50%; }
+.recipe__container--vanilla {
+  background: url("../img/shakeology-vanilla.png") no-repeat left;
+  background-position: 0  50%; }
+.recipe__container--greenberry {
+  background: url("../img/shakeology-greenberry.png") no-repeat left;
+  background-position: 0  50%; }
+.recipe__container--strawberry {
+  background: url("../img/shakeology-strawberry.png") no-repeat left;
+  background-position: 0 50%; }
+.recipe__container--latte {
+  background: url("../img/shakeology-cafe-latte.png") no-repeat left;
+  background-position: 0 50%; }
+.recipe__name {
+  color: #33392d;
+  margin: 0 0 5px 0; }
+.recipe__submitter {
+  color: #6f7566;
+  margin: 0 0 5px 0; }
 
 .nutrition-light {
   font-weight: 100; }

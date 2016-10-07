@@ -222,20 +222,26 @@ p.results-message {
   &__container {
     @include listStyles;
     padding: 10px 10px 10px 65px;
+    
     &--chocolate {
-      background: #f6f6f8 url('../img/shakeology-chocolate.png') no-repeat left 10px;
+      background: #f6f6f8 url('../img/shakeology-chocolate.png') no-repeat left;
+      background-position: 10px 50%;
     }
     &--vanilla {
       background: #f6f6f8 url('../img/shakeology-vanilla.png') no-repeat left;
+      background-position: 10px 50%;
     }
     &--greenberry {
       background: #f6f6f8 url('../img/shakeology-greenberry.png') no-repeat left;
+      background-position: 10px 50%;
     }
     &--strawberry {
       background: #f6f6f8 url('../img/shakeology-strawberry.png') no-repeat left;
+      background-position: 10px 50%;
     }
     &--latte {
       background: #f6f6f8 url('../img/shakeology-cafe-latte.png') no-repeat left;
+      background-position: 10px 50%;
     }
   }
   &__name {
@@ -261,8 +267,40 @@ p.results-message {
     margin-left: 25px;
   }
 }
-.recipe-container {
+.recipe {
   padding: 10px;
+  &__container {
+    padding: 10px 10px 10px 65px;
+    
+    &--chocolate {
+      background: url('../img/shakeology-chocolate.png') no-repeat left;
+      background-position:0  50%;
+    }
+    &--vanilla {
+      background: url('../img/shakeology-vanilla.png') no-repeat left;
+      background-position:0  50%;
+    }
+    &--greenberry {
+      background: url('../img/shakeology-greenberry.png') no-repeat left;
+      background-position:0  50%;
+    }
+    &--strawberry {
+      background: url('../img/shakeology-strawberry.png') no-repeat left;
+      background-position: 0 50%;
+    }
+    &--latte {
+      background: url('../img/shakeology-cafe-latte.png') no-repeat left;
+      background-position: 0 50%;
+    }
+  }
+  &__name {
+    color: #33392d;
+    margin: 0 0 5px 0;
+  }
+  &__submitter {
+    color: #6f7566;
+    margin: 0 0 5px 0;
+  }
 }
 .nutrition-light {
   font-weight: 100;

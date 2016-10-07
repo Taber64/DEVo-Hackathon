@@ -2,4 +2,22 @@
 
 <div class="heading">Ideas</div>
 
+<div class="container">
+  <!--  <div ng-include="'search.html'"></div>-->
+  <div class="search-bar">
+    <input type="search" ng-change="searchShakes(search.$)" placeholder="Search" ng-model="search.$">
+  </div>
+  <p ng-show="searchInProgress" class="results-message">Showing Search results for {{searchTerm}}</p>
+  <div class="shake-margin">
+    <ul class="shake" ng-repeat="x in shakes | filter:search" ng-click="openRecipePreview(x.shakeID)">
+      <li class="shake__container shake__container--{{x.shakeType}}">
+        <h3 class="shake__name">{{x.shakeName}}</h3>
+        <p class="shake__submitter">@{{x.shakeCreator}}</p>
+        <span class="shake__calories">{{x.shakeNutrition.calories}} Cal.</span>
+        <span class="shake__favorites">{{x.shakeFave}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div ng-include="'nav.html'"></div>
