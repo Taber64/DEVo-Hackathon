@@ -9,8 +9,8 @@
   </div>
   <p ng-show="searchInProgress" class="results-message">Showing Search results for {{searchTerm}}</p>
   <div class="shake-margin">
-    <ul class="shake" ng-repeat="x in shakes | filter:search" ng-click="openRecipePreview(x.shakeID)">
-      <li class="shake__container shake__container--{{x.shakeType}}">
+    <ul class="shake">
+      <li class="shake__container shake__container--{{x.shakeType}}" ng-repeat="x in shakes | filter:search" ng-click="openRecipePreview(x.shakeID)">
         <h3 class="shake__name">{{x.shakeName}}</h3>
         <p class="shake__submitter">@{{x.shakeCreator}}</p>
         <span class="shake__calories">{{x.shakeNutrition.calories}} Cal.</span>

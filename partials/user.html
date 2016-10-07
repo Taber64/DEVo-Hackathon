@@ -21,8 +21,6 @@
 	      <h3 class="recipe__name">{{x.shakeName}}</h3>
 	      <p class="recipe__submitter">@CarlDaikler</p>
 	    </div>
-		<h3>{{x.shakeName}}</h3>
-		<p>@CarlDaikler</p>
 		<p>1 scoop <a href="#">{{x.shakeType}} Shakeology</a></p>
 		<p>1 scoop <a href="#">{{x.enhancement}}</a></p>
 		<p>{{x.shakeAddons.extra1}}</p>
@@ -30,6 +28,23 @@
 		<p>{{x.shakeAddons.extra3}}</p>
 		<p><strong>Calories:</strong> {{calories}} <small> Sample only</small></p>
 		<p><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></p>
+	</div>
+
+	<div class="shake-margin">
+	    <ul class="shake">
+	    	<li class="shake__container shake__container--greenberry" ng-click="openRecipePreview(x.shakeID)">
+		        <h3 class="shake__name ng-binding">Green Envy Shakeology</h3>
+		        <p class="shake__submitter ng-binding">@CarlDaikler</p>
+		        <span class="shake__calories ng-binding">238 Cal.</span>
+		        <span class="shake__favorites ng-binding">637</span>
+		      </li>
+	      <li class="shake__container shake__container--vanilla" ng-click="openRecipePreview(x.shakeID)">
+	        <h3 class="shake__name ng-binding">Cranberry Cookie Shakeology</h3>
+	        <p class="shake__submitter ng-binding">@CarlDaikler</p>
+	        <span class="shake__calories ng-binding">310 Cal.</span>
+	        <span class="shake__favorites ng-binding">291</span>
+	      </li>
+	    </ul>
 	</div>
 	
 </div>

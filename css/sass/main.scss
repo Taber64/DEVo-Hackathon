@@ -223,7 +223,8 @@ p.results-message {
     @include listStyles;
     padding: 10px 10px 10px 65px;
     
-    &--chocolate {
+    &--chocolate,
+    &--chocolate-vegan {
       background: #f6f6f8 url('../img/shakeology-chocolate.png') no-repeat left;
       background-position: 10px 50%;
     }
@@ -235,11 +236,12 @@ p.results-message {
       background: #f6f6f8 url('../img/shakeology-greenberry.png') no-repeat left;
       background-position: 10px 50%;
     }
-    &--strawberry {
+    &--strawberry,
+    &--strawberry-vegan {
       background: #f6f6f8 url('../img/shakeology-strawberry.png') no-repeat left;
       background-position: 10px 50%;
     }
-    &--latte {
+    &--cafe-latte {
       background: #f6f6f8 url('../img/shakeology-cafe-latte.png') no-repeat left;
       background-position: 10px 50%;
     }
