@@ -1,0 +1,11 @@
+<h2> Review Your Recipe</h2>
+
+<p>Name: {{personalizedShakeName}}</p>
+<p >Flavor: {{flavorChoice}}</p>
+<p ng-show="hasEnhancement">Enhancement: {{enhancement}}</p>
+<p ng-repeat="x in extras">Extra: {{x}} </p>
+<p>Calories: {{calories}} <small> Sample only</small></p>
+<p>Nutrition Facts: {{nutritionFacts}} <small> Sample only</small></p>
+
+<button>Save & Finish</button>
+<p> <a href="nameyourrecipe">Go Back</a></p>

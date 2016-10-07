@@ -9,15 +9,15 @@
        * Whenever the current page is a create a recipe page, it shows the flavor
        * if the user selected one previously
        */
-      if(currentPage === "/createarecipe"){
+      if(currentPage === "/createarecipe" || currentPage === '/reviewyourrecipe'){
         $scope.flavorChoice = recipeData.getFlavor(); // reassign for maintaining state
       }
 
-      if(currentPage === "/enhanceyourshake"){
+      if(currentPage === "/enhanceyourshake" || currentPage === '/reviewyourrecipe'){
         $scope.enhancementChoice = recipeData.getEnhancement(); // reassign for maintaining state
       }
 
-      if(currentPage === "/addextras"){
+      if(currentPage === "/addextras" || currentPage === '/reviewyourrecipe'){
          console.log("Current Page is Extras: ");
          var savedExtras = recipeData.getExtras(); // reassign for maintaining state
 
@@ -41,8 +41,16 @@
          });
       }
 
-      if(currentPage === '/nameyourrecipe'){
+      if(currentPage === '/nameyourrecipe' || currentPage === '/reviewyourrecipe'){
          $scope.personalizedShakeName = recipeData.getPersonalizedName();
+      }
+
+      if(currentPage === '/reviewyourrecipe'){//show this only in the reviewPage
+         $scope.nutritionFacts = recipeData.getNutritionFacts();
+         console.log($scope.nutritionFacts);
+         
+         $scope.calories = recipeData.getCalories();
+         console.log($scope.calories);
       }
 
    	/*
@@ -121,6 +129,11 @@
    		else { // the form is valid
    			console.log("personalized name: " + $scope.personalizedShakeName);
             recipeData.setPersonalizedName($scope.personalizedShakeName);
+            recipeData.setCalories(); // set the sample Data - no values passed
+            recipeData.setNutritionFacts();
+
+            $location.path('/reviewyourrecipe');
+
    		}
 
    	};

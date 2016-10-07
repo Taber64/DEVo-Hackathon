@@ -51,5 +51,26 @@ angular.module('DevoDemoApp').factory('recipeData', function(){
     return angular.fromJson(sessionStorage.personalizedName);
   }
 
+  recipeData.setCalories = function(){
+  	//We are setting the values directly here since we have no facts
+  	var calories = 150;
+  	sessionStorage.calories = angular.toJson(calories); 
+  }
+
+  recipeData.getCalories = function(){
+  	return angular.fromJson(sessionStorage.calories);
+  };
+
+  recipeData.setNutritionFacts = function(){
+  	//We are setting the values directly here since we have no facts
+  	var nutritionFacts = "Protein 30g, Carbs 40g, Fat 9g, Sodium 20g, Fiber 15g";
+  	sessionStorage.nutritionFacts = angular.toJson(nutritionFacts); 
+  }
+
+  recipeData.getNutritionFacts = function(){
+  	return angular.fromJson(sessionStorage.nutritionFacts);
+  };
+
+
   return recipeData;
 });
