@@ -10,8 +10,6 @@
 
   <h3 ng-show="searchInProgress">Showing Search results for {{searchTerm}}</h3>
 	
-    <h1>Welcome to the Devo Demo App </h1>
-
      <div ng-repeat="x in shakes | filter:search">
       <p>Shake Flavor: {{x.shakeFlavor}}</p>
       <div ng-repeat="y in x.shakeAttributes | filter:search">
