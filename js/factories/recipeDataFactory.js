@@ -6,28 +6,49 @@ angular.module('DevoDemoApp').factory('recipeData', function(){
   recipeData.enhancement = []; 
   recipeData.extras = [];
 
+  /*
+   * The Set & Get Use Both Session storage and Angular Services in case the user refreshes the page
+   * so the state of the data is maintained
+   */
   recipeData.setFlavor = function(flavor){
-  	recipeData.flavors = flavor;//only one variable needed
+  	sessionStorage.flavor = angular.toJson(flavor); //save to session storage
+  	//recipeData.flavors = flavor;//only one variable needed
+  	recipeData.flavors = flavor;
   }
 
   recipeData.setEnhancement = function(enhancement){
-  	recipeData.enhancement.push(enhancement);
+  	sessionStorage.enhancement = angular.toJson(enhancement); 
+  	//recipeData.enhancement.push(enhancement);
   }
 
   recipeData.setExtras = function(extras){
-  	recipeData.extras.push(extras);
+  	sessionStorage.extras = angular.toJson(extras); 
+  	//recipeData.extras.push(extras);
   }
 
-  recipeData.getExtras = function(extras){
-  	return recipeData.extras;
+  recipeData.getExtras = function(){
+  	return angular.fromJson(sessionStorage.extras);
+  	//return recipeData.extras;
   }
 
   recipeData.getFlavor = function () {
-  	return recipeData.flavors;
+  	console.log("Factory flavor: " + angular.fromJson(sessionStorage.flavor));
+    return angular.fromJson(sessionStorage.flavor);
+  //return recipeData.flavors; //normal service
   }
 
   recipeData.getEnhancement = function () {
-  	return recipeData.enhancement;
+  	return angular.fromJson(sessionStorage.enhancement);
+
+  	//return recipeData.enhancement; // normal service
+  }
+
+  recipeData.setPersonalizedName = function(name){
+    sessionStorage.personalizedName = angular.toJson(name); 
+  }
+
+  recipeData.getPersonalizedName = function(){
+    return angular.fromJson(sessionStorage.personalizedName);
   }
 
   return recipeData;

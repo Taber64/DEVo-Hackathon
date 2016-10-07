@@ -13,7 +13,8 @@
 	  <button ng-click="">BACK</button>
 	  <button ng-click="flavorSelected(selectAFlavorForm)">NEXT</button> 
   </div>
-  <div ng-show="submitted && selectAFlavorForm.$invalid">
+<!--   <code>{{selectAFlavorForm.$pristine}}</code>
+ -->  <div ng-show="frmInvalid">
   	<p>Please Select a Flavor to Continue</p>
   </div>
   </form>
