@@ -6,6 +6,7 @@
         "shakeName": "Oatmeal Raisin Cookie Shakeology",
         "shakeCreator": "AnreaBBCoach",
         "shakeFave": 637,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Vanilla Shakeology", "1 cup unsweetened almond milk", "2 Tbsp. dry old-fashioned rolled oats", "½ tsp. ground cinnamon", "1 Tbsp. raisins", "1 cup ice"],
         "shakeNutrition": {
           "calories": "238",
@@ -30,6 +31,7 @@
         "shakeName": "Orange Creamsicle Shakeology",
         "shakeCreator": "CarlDaikeler",
         "shakeFave": 512,
+        "shakeDate": 15,
         "shakeAddons": ["1 scoop Vanilla Shakeology", "½ cup unsweetened almond milk (or low-fat milk)", "½ cup 100% orange juice", "1 cup ice"],
         "shakeNutrition": {
           "calories": "227",
@@ -54,6 +56,7 @@
         "shakeName": "Piña Colada Shakeology",
         "shakeCreator": "Awesome_Sauce",
         "shakeFave": 317,
+        "shakeDate": 19,
         "shakeAddons": ["1 scoop Vanilla Shakeology", "½ cup water", "½ cup 100% pineapple juice", "½ tsp. pure coconut extract", "½ cup ice (add more to taste)"],
         "shakeNutrition": {
           "calories": "169",
@@ -78,6 +81,7 @@
         "shakeName": "Pumpkin Pie Shakeology",
         "shakeCreator": "CoachCallie",
         "shakeFave": 296,
+        "shakeDate": 1,
         "shakeAddons": ["1 scoop Vanilla Shakeology", "¼ cup water", "¾ cup unsweetened vanilla almond milk", "½ cup canned pumpkin puree", "1 tsp. pure maple syrup (or raw honey)", "1 Tbsp. coarsely chopped raw pecans", "1 tsp. pumpkin pie spice", "1 cup ice"],
         "shakeNutrition": {
           "calories": "271",
@@ -102,6 +106,7 @@
         "shakeName": "Lemon Bar Shakeology",
         "shakeCreator": "BeachBody",
         "shakeFave": 111,
+        "shakeDate": 41,
         "shakeAddons": ["1 scoop Vanilla Shakeology", "¾ cup nonfat milk", "¼ cup water", "2 Tbsp. fresh lemon juice", "1 tsp. pure vanilla extract", "1 tsp. finely chopped lemon peel (lemon zest)", "1 cup ice"],
         "shakeNutrition": {
           "calories": "213",
@@ -126,6 +131,7 @@
         "shakeName": "Chocolate Caramel Delight Smoothie",
         "shakeCreator": "JoeyJoJoJuniorShabadooh",
         "shakeFave": 241,
+        "shakeDate": 21,
         "shakeAddons": ["1 scoop Chocolate Shakeology", "1 cup unsweetened almond milk", "1 tsp. pure caramel extract", "2 Tbsp. shredded unsweetened coconut, toasted", "1 cup ice"],
         "shakeNutrition": {
           "calories": "281",
@@ -150,6 +156,7 @@
         "shakeName": "Dark Blue Moon Shakeology",
         "shakeCreator": "KevinTaber",
         "shakeFave": 311,
+        "shakeDate": 15,
         "shakeAddons": ["1 scoop Chocolate Shakeology", "1 cup water", "1 cup fresh or frozen blueberries", "1 cup ice"],
         "shakeNutrition": {
           "calories": "243",
@@ -174,6 +181,7 @@
         "shakeName": "S’mores Shakeology",
         "shakeCreator": "YuliyaBahamolskaya",
         "shakeFave": 182,
+        "shakeDate": 9,
         "shakeAddons": ["1 scoop Chocolate Shakeology", "1 cup unsweetened vanilla almond milk", "1 tsp. pure vanilla extract", "2 tsp. ground whole wheat graham cracker crumbs, divided use", "1 cup ice"],
         "shakeNutrition": {
           "calories": "228",
@@ -198,6 +206,7 @@
         "shakeName": "Cherry Pomegranate Shakeology",
         "shakeCreator": "PhilipEmokpare",
         "shakeFave": 700,
+        "shakeDate": 7,
         "shakeAddons": ["1 scoop Chocolate Shakeology", "½ cup water", "¼ cup organic tart cherry juice", "¼ cup 100% pomegranate juice", "1 cup ice"],
         "shakeNutrition": {
           "calories": "229",
@@ -222,6 +231,7 @@
         "shakeName": "Chocolate Raspberry Cheesecake Shakeology",
         "shakeCreator": "SamRichardson",
         "shakeFave": 12,
+        "shakeDate": 23,
         "shakeAddons": ["1 scoop Chocolate Shakeology", "½ cup low-fat (1%) milk", "¼ cup water", "¼ cup reduced fat (2%) plain yogurt", "¼ cup part skim ricotta cheese", "½ cup fresh or frozen raspberries", "1 cup ice"],
         "shakeNutrition": {
           "calories": "367",
@@ -246,6 +256,7 @@
         "shakeName": "Rum Spice Shakeology",
         "shakeCreator": "TroyMcClure",
         "shakeFave": 444,
+        "shakeDate": 14,
         "shakeAddons": ["1 scoop Vegan Chocolate Shakeology", "1 cup unsweetened coconut milk beverage", "1-2 drops pure rum extract", "¼ tsp. ground cinnamon", "¼ tsp. ground nutmeg", "1 cup ice"],
         "shakeNutrition": {
           "calories": "221",
@@ -270,6 +281,7 @@
         "shakeName": "Chocolate Almond Spice Shakeology",
         "shakeCreator": "DavidPadilla",
         "shakeFave": 751,
+        "shakeDate": 17,
         "shakeAddons": ["1 scoop Vegan Chocolate Shakeology", "1 cup water", "1 tsp. all-natural almond butter", "1 tsp. pure maple syrup", "½ tsp. ground cinnamon", "1 cup ice"],
         "shakeNutrition": {
           "calories": "226",
@@ -294,6 +306,7 @@
         "shakeName": "Hazelnut Latte Shakeology",
         "shakeCreator": "BrianCarney",
         "shakeFave": 10,
+        "shakeDate": 1,
         "shakeAddons": ["1 scoop Cafe Latte Shakeology", "1 cup unsweetened almond milk", "2 Tbsp. chopped raw hazelnuts", "1 tsp. pure hazelnut extract", "1 cup ice"],
         "shakeNutrition": {
           "calories": "308",
@@ -318,6 +331,7 @@
         "shakeName": "Mocha Caramel Latte Shakeology",
         "shakeCreator": "CoachieMcCoacherson",
         "shakeFave": 3,
+        "shakeDate": 71,
         "shakeAddons": ["1 scoop Cafe Latte Shakeology", "1 cup unsweetened chocolate almond milk", "1 tsp. pure caramel extract", "1 cup ice"],
         "shakeNutrition": {
           "calories": "207",
@@ -342,6 +356,7 @@
         "shakeName": "Orange Mocha Latte Shakeology",
         "shakeCreator": "KevinTaber",
         "shakeFave": 74,
+        "shakeDate": 4,
         "shakeAddons": ["1 scoop Cafe Latte Shakeology", "1 cup unsweetened almond milk", "2 Tbsp. unsweetened cocoa powder", "2 tsp. finely grated orange peel (orange zest)", "1 cup ice"],
         "shakeNutrition": {
           "calories": "234",
@@ -366,6 +381,7 @@
         "shakeName": "Chile Mocha Shakeology",
         "shakeCreator": "YuliyaBahamolskaya",
         "shakeFave": 91,
+        "shakeDate": 33,
         "shakeAddons": ["1 scoop Cafe Latte Shakeology", "1 cup unsweetened almond milk", "1 cup ice", "2 Tbsp. unsweetened cocoa powder", "¼ tsp. ground cinnamon", "¼ tsp. ancho chili powder (or chili powder)"],
         "shakeNutrition": {
           "calories": "231",
@@ -390,6 +406,7 @@
         "shakeName": "Frozen Thai Iced Coffee",
         "shakeCreator": "DavidPadilla",
         "shakeFave": 55,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Cafe Latte Shakeology", "1 cup strongly brewed coffee, chilled", "½ tsp. ground cardamom", "½ tsp. pure almond extract", "1 cup ice"],
         "shakeNutrition": {
           "calories": "162",
@@ -414,6 +431,7 @@
         "shakeName": "Shamrock Smoothie",
         "shakeCreator": "PhilipEmokpare",
         "shakeFave": 99,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Greenberry Shakeology", "1 cup almond milk, unsweetened", "1 kiwi fruit, peeled and diced", "¼ cup fresh mint leaves", "1 tsp. pure maple syrup", "1 cup ice cubes"],
         "shakeNutrition": {
           "calories": "244",
@@ -438,6 +456,7 @@
         "shakeName": "Green Coconut Shakeology",
         "shakeCreator": "SamRichardson",
         "shakeFave": 332,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Greenberry Shakeology", "1 cup coconut water", "¾ cup packed fresh spinach leaves", "1 cup ice"],
         "shakeNutrition": {
           "calories": "169",
@@ -462,6 +481,7 @@
         "shakeName": "Key Lime Dream Shakeology",
         "shakeCreator": "AnreaBBCoach",
         "shakeFave": 478,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Greenberry Shakeology", "1 cup nonfat milk", "2 Tbsp. fresh lime juice", "1 Tbsp. raw honey", "½ cup ice"],
         "shakeNutrition": {
           "calories": "218",
@@ -486,6 +506,7 @@
         "shakeName": "Sunflower Shake",
         "shakeCreator": "CoachCallie",
         "shakeFave": 555,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Greenberry Shakeology", "1 cup unsweetened almond milk", "¼ cup frozen, canned, or fresh pineapple chunks", "2 Tbsp. raw sunflower seed kernels", "1 Tbsp. golden raisins", "1 cup ice"],
         "shakeNutrition": {
           "calories": "323",
@@ -510,6 +531,7 @@
         "shakeName": "Lemon Raspberry Ricotta Shakeology",
         "shakeCreator": "JonCongdon",
         "shakeFave": 52,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Greenberry Shakeology", "1 cup water", "1 Tbsp. fresh lemon juice", "¼ cup nonfat ricotta cheese", "½ cup fresh or frozen raspberries", "1 cup ice"],
         "shakeNutrition": {
           "calories": "250",
@@ -534,6 +556,7 @@
         "shakeName": "Strawberry Lemonade Shakeology",
         "shakeCreator": "MichaelNeimand",
         "shakeFave": 35,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Strawberry Shakeology", "1 cup water", "2 Tbsp. fresh lemon juice", "1 tsp. pure maple syrup", "1 cup ice"],
         "shakeNutrition": {
           "calories": "154",
@@ -558,6 +581,7 @@
         "shakeName": "Strawberry Mojito Shakeology",
         "shakeCreator": "KevinTaber",
         "shakeFave": 97,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Strawberry Shakeology", "1 cup sparkling water", "1 tsp. finely grated lime peel", "3 Tbsp. fresh lime juice", "2 Tbsp. chopped fresh mint leaves", "1 cup ice", "Fresh mint sprig (for garnish; optional)", "Strawberry slice (for garnish; optional)"],
         "shakeNutrition": {
           "calories": "185",
@@ -582,6 +606,7 @@
         "shakeName": "Strawberry Ginger Shakeology",
         "shakeCreator": "YuliyaBahamolskaya",
         "shakeFave": 88,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Strawberry Shakeology", "1 cup nonfat milk", "1 tsp. pure vanilla extract", "1 thin slice fresh ginger, peeled, finely chopped (or 1 tsp. ground ginger)", "1 cup ice"],
         "shakeNutrition": {
           "calories": "193",
@@ -606,6 +631,7 @@
         "shakeName": "Strawberry Kiwi Shakeology",
         "shakeCreator": "PhilipEmokpare",
         "shakeFave": 210,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Strawberry Shakeology", "1 cup water", "1 medium kiwi fruit, peeled, cut into chunks", "1 cup ice"],
         "shakeNutrition": {
           "calories": "172",
@@ -630,6 +656,7 @@
         "shakeName": "Tropical Watermelon Splash Shakeology",
         "shakeCreator": "DavidPadilla",
         "shakeFave": 470,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Tropical Strawberry Shakeology", "1 cup water", "½ cup cubed watermelon", "1 cup ice"],
         "shakeNutrition": {
           "calories": "183",
@@ -654,6 +681,7 @@
         "shakeName": "Berry Coconut Shakeology",
         "shakeCreator": "SamRichardson",
         "shakeFave": 16,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Tropical Strawberry Shakeology", "1 cup water", "¼ cup fresh or frozen raspberries", "¼ cup Fresh or frozen blueberries (reserve a small amount for garnish)", "1 Tbsp. unsweetened shredded coconut (reserve a small amount for garnish)", "1 cup ice"],
         "shakeNutrition": {
           "calories": "243",
@@ -678,6 +706,7 @@
         "shakeName": "Detox Shakeology",
         "shakeCreator": "CarlDaikeler",
         "shakeFave": 45,
+        "shakeDate": 11,
         "shakeAddons": ["1 scoop Tropical Strawberry Shakeology", "¾ cup water", "1 Tbsp. fresh lemon juice", "1 tsp. grated fresh ginger", "1 cup cubed watermelon", "1 cup ice"],
         "shakeNutrition": {
           "calories": "211",
