@@ -174,22 +174,30 @@ nav.bottom {
 
 .search-bar {
 	width: 100%;
+	margin-top: 15px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="search"] {
 	display: block;
-	background: #e4f6de url('../img/icon-search.svg') no-repeat 94% center;
-	background-size: auto 50%;
+	background: #e4f6de;
 	width: 96%;
 	margin: 0 auto;
 	padding: 15px 25px;
 	border: 0;
 	border-radius: 40px;
 	box-shadow: inset 0 2px 2px #79a668;
+	box-sizing: border-box;
+}
 
-	&:focus {
-		outline: none;
-	}
+input[type="search"] {
+	background: #e4f6de url('../img/icon-search.svg') no-repeat 94% center;
+	background-size: auto 50%;
+}
+
+button:focus,
+input:focus {
+	outline: none;
 }
 
 .shake-margin {

@@ -39,24 +39,9 @@
 
 		var url = $(location).attr('href'),
 			lastPart = url.split("/").pop(),
-			classes = {},
-			aClass = function() {
-				$('.bottom a').each(function() {
-				    $($(this).attr('class').split(' ')).each(function() { 
-				        if (this !== '') {
-				            classes[this] = this;
-				        }    
-				    });
-				});
-			};
+			headingText = $('.heading').text();
 
-			if ($.inArray(lastPart, classes) > -1) {
-				$(this).addClass('active');
-			}
-
-			
-
-		if (lastPart === 'createarecipe') {
+		if (headingText === 'Create a Recipe') {
 			console.log('lastPart is ideas');
 			$('.icon.create').addClass('active');
 		}
