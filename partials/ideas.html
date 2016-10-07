@@ -1,15 +1,12 @@
 <div ng-include="'header.html'"></div>
-
-<div class="heading">Ideas</div>
-
+<div class="heading">Recipe Ideas</div>
 <div class="container">
-  <!--  <div ng-include="'search.html'"></div>-->
-  <div class="search-bar">
-    <input type="search" ng-change="searchShakes(search.$)" placeholder="Search" ng-model="search.$">
+  <div class="button-group">
+    <button ng-click="enhancementSelected(enhanceYourShakeForm)" class="back">Popular</button>
+    <button ng-click="enhancementSelected(enhanceYourShakeForm)">New</button>
   </div>
-  <p ng-show="searchInProgress" class="results-message">Showing Search results for {{searchTerm}}</p>
   <div class="shake-margin">
-    <ul class="shake" ng-repeat="x in shakes | filter:search" ng-click="openRecipePreview(x.shakeID)">
+    <ul class="shake" ng-repeat="x in shakes | filter:search | orderBy:'-shakeFave'" ng-click="openRecipePreview(x.shakeID)">
       <li class="shake__container shake__container--{{x.shakeType}}">
         <h3 class="shake__name">{{x.shakeName}}</h3>
         <p class="shake__submitter">@{{x.shakeCreator}}</p>
@@ -19,5 +16,4 @@
     </ul>
   </div>
 </div>
-
 <div ng-include="'nav.html'"></div>
