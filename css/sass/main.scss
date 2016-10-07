@@ -16,6 +16,11 @@ $border-color: #dfdfdf;
 @mixin listStyles {
 	background: #f6f6f8;
 	border-bottom: 1px solid $border-color;
+
+	@media (min-width: 768px) {
+		border-right: 1px solid $border-color;
+		border-left: 1px solid $border-color;
+	}
 }
 
 body {
@@ -213,10 +218,9 @@ p.results-message {
   list-style: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid $border-color;
   &__container {
-    background: #f6f6f8;
-    border-top: 1px solid #dfdee6;
-    border-bottom: 1px solid #dfdee6;
+    @include listStyles;
     padding: 10px 10px 10px 65px;
     &--chocolate {
       background: #f6f6f8 url('../img/shakeology-chocolate.png') no-repeat left 10px;
