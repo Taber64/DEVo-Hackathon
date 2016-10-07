@@ -31,7 +31,6 @@
   	//console.log("String Being Searched: " + str);
   }
 
-
   //THE CODE BELOW WORKS FOR shakeName Search
  	// $http.get('../js/mock/shakeData.json').then(function(results){
  	// 	console.log(results);

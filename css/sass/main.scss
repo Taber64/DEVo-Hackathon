@@ -121,6 +121,15 @@ nav.bottom {
 			fill: $dark-gray;
 		}
 
+		&.active {
+			color: $green;
+
+			svg {
+				fill: $green;
+			}
+			
+		}
+
 	}
 
 }

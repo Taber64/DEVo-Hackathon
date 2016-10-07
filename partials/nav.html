@@ -1,6 +1,6 @@
 <nav class="bottom">
 	<a href="/partials/homepage">
-		<button class="icon">
+		<button class="icon search">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.88 14">
 				<title>icon-search</title>
 				<path d="M13.47,11.7,11.09,9.32A1.32,1.32,0,0,0,10,9L8.82,7.82a4.86,4.86,0,0,0,1-2.92,4.91,4.91,0,1,0-2.13,4L8.83,10.1a1.32,1.32,0,0,0,.36,1.12l2.38,2.39a1.35,1.35,0,1,0,1.9-1.91ZM4.9,8.19A3.29,3.29,0,1,1,8.19,4.9,3.29,3.29,0,0,1,4.9,8.19Z"/>
@@ -9,7 +9,7 @@
 		</button>
 	</a>
 	<a href="/partials/createarecipe">
-		<button class="icon">
+		<button class="icon create">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16">
 				<title>icon-create-recipe</title>
 				<path d="M13.34,3.58A14.1,14.1,0,0,0,12,2,14.18,14.18,0,0,0,10.42.66,2.5,2.5,0,0,0,9,0H1.25A1.25,1.25,0,0,0,0,1.25v13.5A1.25,1.25,0,0,0,1.25,16h11.5A1.25,1.25,0,0,0,14,14.75V5A2.49,2.49,0,0,0,13.34,3.58ZM10,1.59a13.66,13.66,0,0,1,1.27,1.13h0A13.5,13.5,0,0,1,12.4,4H10Zm3,13.14a.25.25,0,0,1-.25.25H1.25A.25.25,0,0,1,1,14.75V1.25A.25.25,0,0,1,1.25,1H9V4.5a.5.5,0,0,0,.5.5H13Z"/>
@@ -19,7 +19,7 @@
 		</button>
 	</a>
 	<a href="/partials/ideas">
-		<button class="icon">
+		<button class="icon ideas">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 13.94">
 				<title>icon-ideas</title>
 				<path d="M6.87,11.15H2.16l.13,1.55,1.55.84s.12.4.26.4h.84c.14,0,.26-.4.26-.4l1.55-.84Z" transform="translate(-0.01 0)"/>
@@ -30,3 +30,44 @@
 		</button>
 	</a>
 </nav>
+
+<script>
+	$(document).ready(function() {
+		console.log('ready');
+
+		var url = $(location).attr('href'),
+			lastPart = url.split("/").pop(),
+			classes = {},
+			aClass = function() {
+				$('.bottom a').each(function() {
+				    $($(this).attr('class').split(' ')).each(function() { 
+				        if (this !== '') {
+				            classes[this] = this;
+				        }    
+				    });
+				});
+			};
+
+			if ($.inArray(lastPart, classes) > -1) {
+				$(this).addClass('active');
+			}
+
+			
+
+		if (lastPart === 'createarecipe') {
+			console.log('lastPart is ideas');
+			$('.icon.create').addClass('active');
+		}
+
+		if (lastPart === 'ideas') {
+			console.log('lastPart is ideas');
+			$('.icon.ideas').addClass('active');
+		}
+
+		if (lastPart === 'homepage') {
+			console.log('lastPart is ideas');
+			$('.icon.search').addClass('active');
+		}
+		
+	});
+</script>
