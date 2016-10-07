@@ -6,13 +6,14 @@
 
 <div class="container">
 
-	<ul class="review">
-		<li><strong>Name:</strong> {{personalizedShakeName}}</li>
-		<li><strong>Flavor:</strong> {{flavorChoice}}</li>
-		<li ng-show="hasEnhancement"><strong>Enhancement:</strong> {{enhancement}}</li>
-		<li ng-repeat="x in extras"><strong>Extra:</strong> {{x}}</li>
-		<li><strong>Calories:</strong> {{calories}} <small> Sample only</small></li>
-		<li><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></li>
+	<div class="recipe">
+		<p><strong>Name:</strong> {{personalizedShakeName}}</p>
+		<p><strong>Ingredients:</strong></p>
+		<p class="ingredient-review">1 scoop {{flavorChoice}}</p>
+		<p ng-show="hasEnhancement" class="ingredient-review">1 scoop {{enhancement}}</p>
+		<p ng-repeat="x in extras" class="ingredient-review">{{x}}</p>
+		<p><strong>Calories:</strong> {{calories}}</p>
+		<p><strong>Nutrition Facts:</strong> {{nutritionFacts}}</p>
 	</ul>
 
 	<div class="button-group">

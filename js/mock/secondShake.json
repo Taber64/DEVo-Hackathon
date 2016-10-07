@@ -241,7 +241,7 @@
     },
     { 
         "shakeID" : 11,
-        "shakeType" : "chocolate",
+        "shakeType" : "chocolate-vegan",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1455070450/beachbodyblog/Rum-Spice-Shakeology.jpg",
         "shakeName": "Rum Spice Shakeology",
         "shakeCreator": "BeachBody",
@@ -265,7 +265,7 @@
     }, 
     {
       "shakeID" : 12,
-        "shakeType" : "chocolate",
+        "shakeType" : "chocolate-vegan",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/v1457557347/beachbodyblog/Chocolate-Almond-Spice-Shakeology.jpg",
         "shakeName": "Chocolate Almond Spice Shakeology",
         "shakeCreator": "BeachBody",
@@ -289,7 +289,7 @@
     },
     { 
         "shakeID" : 13,
-        "shakeType" : "latte",
+        "shakeType" : "cafe-latte",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1452189119/beachbodyblog/Hazelnut-Latte-Shakeology.jpg",
         "shakeName": "Hazelnut Latte Shakeology",
         "shakeCreator": "BeachBody",
@@ -313,7 +313,7 @@
     }, 
     {
       "shakeID" : 14,
-        "shakeType" : "latte",
+        "shakeType" : "cafe-latte",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1472072564/Mocha-Caramel-Latte-Shakeology.jpg",
         "shakeName": "Mocha Caramel Latte Shakeology",
         "shakeCreator": "BeachBody",
@@ -337,7 +337,7 @@
     },
     {
       "shakeID" : 15,
-        "shakeType" : "latte",
+        "shakeType" : "cafe-latte",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1452133575/Orange-Mocha-Latte-Shakeology_xghhi5.jpg",
         "shakeName": "Orange Mocha Latte Shakeology",
         "shakeCreator": "BeachBody",
@@ -361,7 +361,7 @@
     },
     {
       "shakeID" : 16,
-        "shakeType" : "latte",
+        "shakeType" : "cafe-latte",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1473912798/Chile-Mocha-Shakeology.jpg",
         "shakeName": "Chile Mocha Shakeology",
         "shakeCreator": "BeachBody",
@@ -385,7 +385,7 @@
     },
     {
       "shakeID" : 16,
-        "shakeType" : "latte",
+        "shakeType" : "cafe-latte",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1452286806/Frozen-Thai-Iced-Coffee_copy_vbqtfr.jpg",
         "shakeName": "Frozen Thai Iced Coffee",
         "shakeCreator": "BeachBody",
@@ -625,7 +625,7 @@
     },
     { 
         "shakeID" : 25,
-        "shakeType" : "strawberry",
+        "shakeType" : "strawberry-vegan",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1471462365/Tropical_Watermelon_Spalsh.jpg",
         "shakeName": "Tropical Watermelon Splash Shakeology",
         "shakeCreator": "BeachBody",
@@ -649,7 +649,7 @@
     }, 
     {
       "shakeID" : 26,
-        "shakeType" : "strawberry",
+        "shakeType" : "strawberry-vegan",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1467395303/Berry-Coconut-Shakeoloyheader.jpg",
         "shakeName": "Berry Coconut Shakeology",
         "shakeCreator": "BeachBody",
@@ -673,7 +673,7 @@
     },
     {
       "shakeID" : 27,
-        "shakeType" : "strawberry",
+        "shakeType" : "strawberry-vegan",
         "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_70/v1429816116/beachbodyblog/Detox-Shakeology-Recipe-Header.jpg",
         "shakeName": "Detox Shakeology",
         "shakeCreator": "BeachBody",

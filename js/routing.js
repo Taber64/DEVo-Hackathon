@@ -49,7 +49,7 @@ angular.module('DevoDemoApp', ['ngRoute']).config(['$routeProvider', '$locationP
   .when('/user',{
     title: 'Name Your Recipe',
     templateUrl: '../partials/user.html',
-    controller: 'userProfileController'
+    controller: 'recipeDetailsController'
   })
   .when('/reviewyourrecipe',{
     title: 'Name Your Recipe',

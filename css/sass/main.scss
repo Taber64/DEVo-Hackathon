@@ -267,12 +267,16 @@ p.results-message {
     margin-left: 25px;
   }
 }
+
 .recipe {
-  padding: 10px;
+  @include containerStyles;
+  color: $dark-gray;
+
   &__container {
     padding: 10px 10px 10px 65px;
     
-    &--chocolate {
+    &--chocolate,
+    &--chocolate-vegan {
       background: url('../img/shakeology-chocolate.png') no-repeat left;
       background-position:0  50%;
     }
@@ -284,11 +288,12 @@ p.results-message {
       background: url('../img/shakeology-greenberry.png') no-repeat left;
       background-position:0  50%;
     }
-    &--strawberry {
+    &--strawberry,
+    &--strawberry-vegan {
       background: url('../img/shakeology-strawberry.png') no-repeat left;
       background-position: 0 50%;
     }
-    &--latte {
+    &--cafe-latte {
       background: url('../img/shakeology-cafe-latte.png') no-repeat left;
       background-position: 0 50%;
     }
@@ -301,7 +306,17 @@ p.results-message {
     color: #6f7566;
     margin: 0 0 5px 0;
   }
+
+  .ingredient-review {
+    margin-left: 20px;
+  }
+
+  a {
+    color: $green;
+  }
+
 }
+
 .nutrition-light {
   font-weight: 100;
 }

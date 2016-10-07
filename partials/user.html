@@ -1,9 +1,37 @@
 <div ng-include="'header.html'"></div>
 
-<div class="heading">User</div>
-  <div ng-repeat="x in userSavedRecipes" ng-click="openRecipePreview(x.shakeID)"> 
-  	 <p>{{x.shakeName}}</p>
-  	 <p>@CarlDaikler</p>
-  <div>
+<div class="heading">My Profile</div>
+
+
+<!--
+<div class="container">
+  <div class="recipe-container">
+    <div class="">
+      <h3>{{BBrecipeToDisplay.shakeName}}</h3>
+      <p>@{{BBrecipeToDisplay.shakeCreator}}</p>
+    </div>
+    <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
+    <p>Nutrition Facts <span class="nutrition-light">Protein {{BBrecipeToDisplay.shakeNutrition.protein}}g, Carbs  {{BBrecipeToDisplay.shakeNutrition.carbs}}g, Fat {{BBrecipeToDisplay.shakeNutrition.fat}}g, Sodium {{BBrecipeToDisplay.shakeNutrition.sodium}}g, Fiber {{BBrecipeToDisplay.shakeNutrition.protein}}g<span></p>
+</div>
+-->
+
+<div class="container">
+	<div class="recipe" ng-repeat="x in user__SavedRecipes">
+		<div class="recipe__container recipe__container--{{x.shakeType}}">
+	      <h3 class="recipe__name">{{x.shakeName}}</h3>
+	      <p class="recipe__submitter">@CarlDaikler</p>
+	    </div>
+		<h3>{{x.shakeName}}</h3>
+		<p>@CarlDaikler</p>
+		<p>1 scoop <a href="#">{{x.shakeType}} Shakeology</a></p>
+		<p>1 scoop <a href="#">{{x.enhancement}}</a></p>
+		<p>{{x.shakeAddons.extra1}}</p>
+		<p>{{x.shakeAddons.extra2}}</p>
+		<p>{{x.shakeAddons.extra3}}</p>
+		<p><strong>Calories:</strong> {{calories}} <small> Sample only</small></p>
+		<p><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></p>
+	</div>
+	
+</div>
   	
 <div ng-include="'nav.html'"></div>
