@@ -490,5 +490,164 @@
         "shakeContainer": ["½ Purple", "1 Red"]
     }
   ]
+ },
+ {
+  "shakeID" : 6,
+    "shakeFlavor": "Strawberry",
+    "shakeAttributes": [
+        { 
+        "shakeAttrID" : 1,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1427843597/Strawberry-Lemonade-Shakeology_qjm5zm.jpg",
+        "shakeName": "Strawberry Lemonade Shakeology",
+        "shakeAddons": ["1 cup water", "2 Tbsp. fresh lemon juice", "1 tsp. pure maple syrup", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "154",
+          "fat": "1",
+          "satFat": "0",
+          "cholesterol": "5",
+          "sodium": "134",
+          "carbs": "22",
+          "fiber": "3",
+          "sugars": "12",
+          "protein": "16"
+        },
+        "shakeXX": ["1 ½ Single Snack"],
+        "shakeX3": ["1 Carb", "1 Protein"],
+        "shakeBB": ["1 Protein Liquid","½ Carb Liquid"],
+        "shakeContainer": ["1 Red"]
+    }, 
+    {
+      "shakeAttrID" : 2,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1436393760/Strawberry-Mojito-Shakeology-Header_affxbv.jpg",
+        "shakeName": "Strawberry Mojito Shakeology",
+        "shakeAddons": [  "1 cup sparkling water", "1 tsp. finely grated lime peel", "3 Tbsp. fresh lime juice", "2 Tbsp. chopped fresh mint leaves", "1 cup ice", "Fresh mint sprig (for garnish; optional)", "Strawberry slice (for garnish; optional)"],
+        "shakeNutrition": {
+          "calories": "185",
+          "fat": "4",
+          "satFat": "1",
+          "cholesterol": "0",
+          "sodium": "215",
+          "carbs": "23",
+          "fiber": "5",
+          "sugars": "9",
+          "protein": "16"
+        },
+        "shakeXX": ["1 Protein", "1 Fruit", ""],
+        "shakeX3": ["1 Carb", "1 Protein", ""],
+        "shakeBB": ["1 Protein Liquid","1 Balanced Liquid", "½ Carb Liquid"],
+        "shakeContainer": ["½ Purple", "1 Red", ""]
+    },
+    {
+      "shakeAttrID" : 3,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/v1440461483/Strawberry-Ginger-Shakeology_br93wk.jpg",
+        "shakeName": "Strawberry Ginger Shakeology",
+        "shakeAddons": ["1 cup nonfat milk", "1 tsp. pure vanilla extract", "1 thin slice fresh ginger, peeled, finely chopped (or 1 tsp. ground ginger)", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "193",
+          "fat": "4",
+          "satFat": "1",
+          "cholesterol": "3",
+          "sodium": "181",
+          "carbs": "37",
+          "fiber": "6",
+          "sugars": "14",
+          "protein": "16"
+        },
+        "shakeXX": ["1 Protein", "½ Dairy", ""],
+        "shakeX3": ["1 Carb", "1 ½ Protein", ""],
+        "shakeBB": ["2 Protein Liquid"],
+        "shakeContainer": ["1 Yellow", "1 Red", ""]
+    },
+    {
+      "shakeAttrID" : 4,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/q_70/v1433374036/beachbodyblog/Strawberry-Kiwi-Shakeology-Recipe-Header.jpg",
+        "shakeName": "Strawberry Kiwi Shakeology",
+        "shakeAddons": ["1 cup water", "1 medium kiwi fruit, peeled, cut into chunks", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "172",
+          "fat": "1",
+          "satFat": "0",
+          "cholesterol": "5",
+          "sodium": "135",
+          "carbs": "25",
+          "fiber": "5",
+          "sugars": "13",
+          "protein": "17"
+        },
+        "shakeXX": ["1 Protein", "1 Fruit"],
+        "shakeX3": ["1 Carbs", "1 Protein"],
+        "shakeBB": ["1 Protein Liquid", "1 Fruit"],
+        "shakeContainer": ["½ Purple", "1 Red"]
+    }
+  ]
+ },
+ {
+  "shakeID" : 7,
+    "shakeFlavor": "Tropical Strawberry",
+    "shakeAttributes": [
+        { 
+        "shakeAttrID" : 1,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1471462365/Tropical_Watermelon_Spalsh.jpg",
+        "shakeName": "Tropical Watermelon Splash Shakeology",
+        "shakeAddons": ["1 cup water", "½ cup cubed watermelon", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "183",
+          "fat": "2",
+          "satFat": "0",
+          "cholesterol": "204",
+          "sodium": "204",
+          "carbs": "27",
+          "fiber": "4",
+          "sugars": "14",
+          "protein": "16"
+        },
+        "shakeXX": ["1 Protein", "½ Fruit", "½ Single Serving Snack"],
+        "shakeX3": ["1 Carb", "1 Protein"],
+        "shakeBB": ["1 Protein Liquid","1 Fruit"],
+        "shakeContainer": ["1 Red", "½ Purple"]
+    }, 
+    {
+      "shakeAttrID" : 2,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_auto/h_380,w_760/v1467395303/Berry-Coconut-Shakeoloyheader.jpg",
+        "shakeName": "Berry Coconut Shakeology",
+        "shakeAddons": ["1 cup water", "¼ cup fresh or frozen raspberries", "¼ cup Fresh or frozen blueberries (reserve a small amount for garnish)", "1 Tbsp. unsweetened shredded coconut (reserve a small amount for garnish)", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "243",
+          "fat": "7",
+          "satFat": "4",
+          "cholesterol": "0",
+          "sodium": "215",
+          "carbs": "28",
+          "fiber": "8",
+          "sugars": "13",
+          "protein": "17"
+        },
+        "shakeXX": ["1 Protein", "½ Fruit", "1 Single Serving Snack"],
+        "shakeX3": ["2 Carbs", "1 Protein", "½ Fat"],
+        "shakeBB": ["1 Protein Liquid","1 Balanced Liquid", "1 Fat", "1 Fruit"],
+        "shakeContainer": ["½ Purple", "1 Red", "½ Purple"]
+    },
+    {
+      "shakeAttrID" : 3,
+        "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/f_auto,q_70/v1429816116/beachbodyblog/Detox-Shakeology-Recipe-Header.jpg",
+        "shakeName": "Detox Shakeology",
+        "shakeAddons": ["¾ cup water", "1 Tbsp. fresh lemon juice", "1 tsp. grated fresh ginger", "1 cup cubed watermelon", "1 cup ice"],
+        "shakeNutrition": {
+          "calories": "211",
+          "fat": "1",
+          "satFat": "0",
+          "cholesterol": "0",
+          "sodium": "76",
+          "carbs": "33",
+          "fiber": "5",
+          "sugars": "14",
+          "protein": "16"
+        },
+        "shakeXX": ["3 Vegetables", "1 Fat", "1 Condiment"],
+        "shakeX3": ["1 ½ Carb", "1 Protein", ""],
+        "shakeBB": ["1 Carb Liquid", "6 Vegetables", "2 Fats"],
+        "shakeContainer": ["1 Purple", "1 Red", ""]
+    }
+  ]
  }
 ]
