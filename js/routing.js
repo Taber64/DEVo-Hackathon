@@ -66,6 +66,11 @@ angular.module('DevoDemoApp', ['ngRoute']).config(['$routeProvider', '$locationP
     templateUrl: '../partials/bbrecipedetails.html',
     controller: 'BBrecipeDetailsController'   
   })
+  .when('/newrecipes',{
+    title: 'Name Your Recipe',
+    templateUrl: '../partials/newrecipes.html',
+    controller: 'homepageController'   
+  })
   .otherwise({
   	redirectTo: '/homepage'
   });

@@ -5,7 +5,7 @@
 <div class="container">
   <div class="button-group">
     <button class="back">Popular</button>
-    <a href="newrecipes"><button>New</button></a>
+    <a href="/partials/newrecipes"><button>New</button></a>
   </div>
   <div class="shake-margin">
     <ul class="shake" ng-repeat="x in shakes | filter:search | orderBy:'-shakeFave'" ng-click="openRecipePreview(x.shakeID)">
