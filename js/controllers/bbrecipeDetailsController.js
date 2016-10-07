@@ -6,28 +6,6 @@
 angular.module('DevoDemoApp').controller('BBrecipeDetailsController', ['$http', '$location', '$scope', '$rootScope', '$window', 'allRecipesData',
   function($http, $location, $scope, $rootScope, $window, allRecipesData) {
 
-    $scope.retrieveBBSavedData = function() {
-
-      if (!angular.isDefined(allRecipesData.getBBShakes())) {
-        $http.get('../js/mock/secondShake.json').then(function(results) {
-          console.log(results);
-          $scope.BBRecipes = results.data;
-          console.log("bb recipes: " + $scope.BBRecipes);
-          $scope.getRecipes();
-        }).catch(function(errors) {
-          console.log("Error occurred");
-        });
-
-
-      } else {
-        $scope.BBRecipes = allRecipesData.getBBShakes();
-        $scope.getRecipes();
-      }
-      
-
-    }
-
-    $scope.retrieveBBSavedData();
 
     $scope.getRecipes = function() {
       var id = allRecipesData.getRequestRecipeID(); //get the latest passed ID
@@ -42,6 +20,25 @@ angular.module('DevoDemoApp').controller('BBrecipeDetailsController', ['$http', 
         }
       });
     }
+
+
+    $scope.retrieveBBSavedData = function() {
+      if (!angular.isDefined(allRecipesData.getBBShakes())) { // if no user Appended Main BB Data
+        $http.get('../js/mock/secondShake.json').then(function(results) {
+          console.log(results);
+          $scope.BBRecipes = results.data;
+          console.log("bb recipes: " + $scope.BBRecipes);
+          $scope.getRecipes();
+        }).catch(function(errors) {
+          console.log("Error occurred");
+        });
+      } else {
+        $scope.BBRecipes = allRecipesData.getBBShakes();
+        $scope.getRecipes();
+      }
+    }
+
+    $scope.retrieveBBSavedData();
 
 
   }

@@ -3,6 +3,7 @@ angular.module('DevoDemoApp').factory('allRecipesData', function(){
   var allRecipesData = {};
 
   allRecipesData.setBBShakes = function(BBShakes){
+    console.log("Factory: " + BBShakes);
   	sessionStorage.BBShakes = angular.toJson(BBShakes); 
   }
 

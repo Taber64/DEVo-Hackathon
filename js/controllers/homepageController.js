@@ -9,13 +9,18 @@
 
    	//$scope.devTeam = "This is our Team. We rock";
 
- 	$http.get('../js/mock/secondShake.json').then(function(results){
- 		console.log(results);
- 		$scope.shakes = results.data;
- 	}).catch(function(errors){
- 		console.log("Error occurred");
- 	});
 
+      if (!angular.isDefined(allRecipesData.getBBShakes())) {
+			 	$http.get('../js/mock/secondShake.json').then(function(results){
+			 		console.log(results);
+			 		$scope.shakes = results.data;
+			 	}).catch(function(errors){
+			 		console.log("Error occurred");
+			 	});
+      } else {
+        $scope.shakes = allRecipesData.getBBShakes(); // get the User added shake added
+      }
+      
   /*
    * Shows the Search Feedback text if the characters typed is more
    * than 3 or hide it when its 0
