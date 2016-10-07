@@ -1,8 +1,12 @@
 <div ng-include="'header.html'"></div>
 <div class="container">
-  <p>{{BBrecipeToDisplay.shakeType}}</p>
-  <p>{{BBrecipeToDisplay.shakeName}}</p>
-  <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
-  <p ng-repeat="d in BBrecipeToDisplay.shakeNutrition">{{d}}</p>
+  <div class="recipe-container">
+    <div class="">
+      <h3>{{BBrecipeToDisplay.shakeName}}</h3>
+      <p>@{{BBrecipeToDisplay.shakeCreator}}</p>
+    </div>
+    <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
+    <p>Nutrition Facts <span class="nutrition-light">Protein {{BBrecipeToDisplay.shakeNutrition.protein}}g, Carbs  {{BBrecipeToDisplay.shakeNutrition.carbs}}g, Fat {{BBrecipeToDisplay.shakeNutrition.fat}}g, Sodium {{BBrecipeToDisplay.shakeNutrition.sodium}}g, Fiber {{BBrecipeToDisplay.shakeNutrition.protein}}g<span></p>
+</div>
 </div>
 <div ng-include="'nav.html'"></div>

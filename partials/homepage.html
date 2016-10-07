@@ -12,9 +12,9 @@
     <ul class="shake" ng-repeat="x in shakes | filter:search" ng-click="openRecipePreview(x.shakeID)">
       <li class="shake__container shake__container--{{x.shakeType}}">
         <h3 class="shake__name">{{x.shakeName}}</h3>
-        <p class="shake__submitter">@beachbody</p>
+        <p class="shake__submitter">@{{x.shakeCreator}}</p>
         <span class="shake__calories">{{x.shakeNutrition.calories}} Cal.</span>
-        <span class="shake__favorites">637</span>
+        <span class="shake__favorites">{{x.shakeFave}}</span>
       </li>
     </ul>
   </div>
