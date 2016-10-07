@@ -26,7 +26,7 @@ body {
 .container {
 	width: 100%;
 	max-width: 768px;
-	margin: 0 auto;
+	margin: 0 auto 75px;
 	box-sizing: border-box;
 
 	img {
@@ -174,7 +174,7 @@ nav.bottom {
 
 .search-bar {
 	width: 100%;
-	margin-top: 15px;
+	margin: 15px 0;
 }
 
 input[type="text"],
@@ -200,8 +200,13 @@ input:focus {
 	outline: none;
 }
 
+p.results-message {
+	@include containerStyles;
+	color: $green;
+}
+
 .shake-margin {
-	margin: 15px 0;
+	margin: 0 0 15px;
 }
 .shake {
   font-size: 16px;

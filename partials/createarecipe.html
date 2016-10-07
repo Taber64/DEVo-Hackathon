@@ -4,24 +4,28 @@
 
 <span class="step">1. Select a Flavor</span>
 
-<form name="selectAFlavorForm" novalidate>
+<div class="container">
 
-  <label><input type="radio" name="flavor" value="chocolate" ng-model="flavorChoice" ng-required="true"> Chocolate</label>
-  <label><input type="radio" name="flavor" value="vanilla" ng-model="flavorChoice" ng-required="true"> Vanilla</label>
-  <label><input type="radio" name="flavor" value="strawberry" ng-model="flavorChoice" ng-required="true"> Strawberry</label>
-  <label><input type="radio" name="flavor" value="cafe latte" ng-model="flavorChoice" ng-required="true"> Cafe Latte</label>
-  <label><input type="radio" name="flavor" value="greenberry" ng-model="flavorChoice" ng-required="true"> Greenberry</label>
-  <label><input type="radio" name="flavor" value="chocolate vegan" ng-model="flavorChoice" ng-required="true"> Chocolate Vegan</label>
-  <label><input type="radio" name="flavor" value="strawberry vegan" ng-model="flavorChoice" ng-required="true"> Strawberry Vegan</label>
+  <form name="selectAFlavorForm" novalidate>
 
-  <div class="button-group">
-    <button ng-click="flavorSelected(selectAFlavorForm)">Next</button>
-  </div>
-   
-  <div ng-show="frmInvalid" class="error">
-    Please Select a Flavor to Continue
-  </div>
+    <label><input type="radio" name="flavor" value="chocolate" ng-model="flavorChoice" ng-required="true"> Chocolate</label>
+    <label><input type="radio" name="flavor" value="vanilla" ng-model="flavorChoice" ng-required="true"> Vanilla</label>
+    <label><input type="radio" name="flavor" value="strawberry" ng-model="flavorChoice" ng-required="true"> Strawberry</label>
+    <label><input type="radio" name="flavor" value="cafe latte" ng-model="flavorChoice" ng-required="true"> Cafe Latte</label>
+    <label><input type="radio" name="flavor" value="greenberry" ng-model="flavorChoice" ng-required="true"> Greenberry</label>
+    <label><input type="radio" name="flavor" value="chocolate vegan" ng-model="flavorChoice" ng-required="true"> Chocolate Vegan</label>
+    <label><input type="radio" name="flavor" value="strawberry vegan" ng-model="flavorChoice" ng-required="true"> Strawberry Vegan</label>
 
-</form>
+    <div class="button-group">
+      <button ng-click="flavorSelected(selectAFlavorForm)">Next</button>
+    </div>
+     
+    <div ng-show="frmInvalid" class="error">
+      Please Select a Flavor to Continue
+    </div>
+
+  </form>
+  
+</div>
   
 <div ng-include="'nav.html'"></div>

@@ -7,7 +7,7 @@
   <div class="search-bar">
     <input type="search" ng-change="searchShakes(search.$)" placeholder="Search" ng-model="search.$">
   </div>
-  <h3 ng-show="searchInProgress">Showing Search results for {{searchTerm}}</h3>
+  <p ng-show="searchInProgress" class="results-message">Showing Search results for {{searchTerm}}</p>
   <div class="shake-margin">
     <ul class="shake" ng-repeat="x in shakes | filter:search">
       <li class="shake__container shake__container--{{y.shakeType}}" ng-repeat="y in x.shakeAttributes | filter:search">

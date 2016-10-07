@@ -4,18 +4,22 @@
 
 <span class="step">2. Enhance Your Shakeology</span>
 
-<form name="enhanceYourShakeForm" novalidate>
+<div class="container">
+
+  <form name="enhanceYourShakeForm" novalidate>
     
-  <label><input type="radio" name="flavor" value="Power Greens" ng-model="enhancementChoice"> Power Greens</label>
-  <label><input type="radio" name="flavor" value="Digestive Health" ng-model="enhancementChoice"> Digestive Health</label>
-  <label><input type="radio" name="flavor" value="Focused Energy" ng-model="enhancementChoice"> Focused Energy</label>
+    <label><input type="radio" name="flavor" value="Power Greens" ng-model="enhancementChoice"> Power Greens</label>
+    <label><input type="radio" name="flavor" value="Digestive Health" ng-model="enhancementChoice"> Digestive Health</label>
+    <label><input type="radio" name="flavor" value="Focused Energy" ng-model="enhancementChoice"> Focused Energy</label>
 
-  <div class="button-group"> 
-	  <a href="createarecipe"><button class="back">Back</button></a>
-	  <button ng-click="enhancementSelected(enhanceYourShakeForm)">Next</button>
-    <a href="addextras" class="skip">Skip</a>
-  </div>
+    <div class="button-group"> 
+      <a href="createarecipe"><button class="back">Back</button></a>
+      <button ng-click="enhancementSelected(enhanceYourShakeForm)">Next</button>
+      <a href="addextras" class="skip">Skip</a>
+    </div>
 
-</form>
+  </form>
+  
+</div>
 
 <div ng-include="'nav.html'"></div>

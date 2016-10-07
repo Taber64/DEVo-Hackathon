@@ -4,24 +4,28 @@
 
 <span class="step">4. Name Your Recipe</span>
 
-<form name="nameYourRecipeForm" novalidate>
+<div class="container">
 
-  <div class="form-group">
-    <input type="text" name="shakename" ng-model="personalizedShakeName" placeholder="Enter a Name" ng-required="true" ng-maxlength="50">
-    <span ng-show="nameYourRecipeForm.shakename.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed.</span>
-    <span ng-show="submitted && nameYourRecipeForm.shakename.$error.required" class="error">Your Recipe name is required.</span>
-  </div>
+  <form name="nameYourRecipeForm" novalidate>
 
-  <div class="button-group"> 
-    <a href="addextras"><button class="back">Back</button></a>
-    <button ng-click="nameyourRecipe(nameYourRecipeForm)">Next</button>
-    <!--
-    <div ng-show="submitted && nameYourRecipeForm.$invalid" class="error">
-       <p>You have some errors in your form, please correct it.</p>
+    <div class="form-group">
+      <input type="text" name="shakename" ng-model="personalizedShakeName" placeholder="Enter a Name" ng-required="true" ng-maxlength="50">
+      <span ng-show="nameYourRecipeForm.shakename.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed.</span>
+      <span ng-show="submitted && nameYourRecipeForm.shakename.$error.required" class="error">Your Recipe name is required.</span>
     </div>
-    -->
-  </div>
 
-</form>
+    <div class="button-group"> 
+      <a href="addextras"><button class="back">Back</button></a>
+      <button ng-click="nameyourRecipe(nameYourRecipeForm)">Next</button>
+      <!--
+      <div ng-show="submitted && nameYourRecipeForm.$invalid" class="error">
+         <p>You have some errors in your form, please correct it.</p>
+      </div>
+      -->
+    </div>
+
+  </form>
+  
+</div>
 
 <div ng-include="'nav.html'"></div>

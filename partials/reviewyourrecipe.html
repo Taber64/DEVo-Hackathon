@@ -4,18 +4,22 @@
 
 <span class="step">5. Review Your Recipe</span>
 
-<ul class="review">
-	<li><strong>Name:</strong> {{personalizedShakeName}}</li>
-	<li><strong>Flavor:</strong> {{flavorChoice}}</li>
-	<li ng-show="hasEnhancement"><strong>Enhancement:</strong> {{enhancement}}</li>
-	<li ng-repeat="x in extras"><strong>Extra:</strong> {{x}}</li>
-	<li><strong>Calories:</strong> {{calories}} <small> Sample only</small></li>
-	<li><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></li>
-</ul>
+<div class="container">
 
-<div class="button-group">
-	<a href="nameyourrecipe"><button class="back">Back</button></a>
-    <button>Save</button>
+	<ul class="review">
+		<li><strong>Name:</strong> {{personalizedShakeName}}</li>
+		<li><strong>Flavor:</strong> {{flavorChoice}}</li>
+		<li ng-show="hasEnhancement"><strong>Enhancement:</strong> {{enhancement}}</li>
+		<li ng-repeat="x in extras"><strong>Extra:</strong> {{x}}</li>
+		<li><strong>Calories:</strong> {{calories}} <small> Sample only</small></li>
+		<li><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></li>
+	</ul>
+
+	<div class="button-group">
+		<a href="nameyourrecipe"><button class="back">Back</button></a>
+	    <button>Save</button>
+	</div>
+	
 </div>
 
 <div ng-include="'nav.html'"></div>

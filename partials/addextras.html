@@ -4,32 +4,36 @@
 
 <span class="step">3. Add Extras</span>
 
-<form name="addExtraForm" novalidate>
+<div class="container">
 
-  <div class="form-group">
-  	<input type="text" name="extra1" ng-model="extras.extra1" placeholder="Enter Ingredients" ng-maxlength="50">
-    <span ng-show="addExtraForm.extra1.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
-  </div>
-  <div class="form-group"> 
-  	<input type="text" name="extra2" ng-model="extras.extra2" placeholder="Enter Ingredients" ng-maxlength="50">
-    <span ng-show="addExtraForm.extra2.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
-  </div>
-  <div class="form-group">
-  	<input type="text" name="extra3" ng-model="extras.extra3" placeholder="Enter Ingredients" ng-maxlength="50">
-  	 <span ng-show="addExtraForm.extra3.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
-  </div>
+  <form name="addExtraForm" novalidate>
 
-  <div class="button-group"> 
-	  <a href="enhanceyourshake"><button class="back">Back</button></a>
-	  <button ng-click="addExtra(addExtraForm)">Next</button>
-    <a href="nameyourrecipe" class="skip">Skip</a>
-    <!--
-    <div ng-show="submitted && addExtraForm.$invalid" class="error">
-      <p>You have some errors in your form, please fix it.</p>
+    <div class="form-group">
+      <input type="text" name="extra1" ng-model="extras.extra1" placeholder="Enter Ingredients" ng-maxlength="50">
+      <span ng-show="addExtraForm.extra1.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
     </div>
-    -->
-  </div>
+    <div class="form-group"> 
+      <input type="text" name="extra2" ng-model="extras.extra2" placeholder="Enter Ingredients" ng-maxlength="50">
+      <span ng-show="addExtraForm.extra2.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
+    </div>
+    <div class="form-group">
+      <input type="text" name="extra3" ng-model="extras.extra3" placeholder="Enter Ingredients" ng-maxlength="50">
+       <span ng-show="addExtraForm.extra3.$error.maxlength" class="error">Maximum characters exceeded, only 50 allowed</span>
+    </div>
 
-</form>
+    <div class="button-group"> 
+      <a href="enhanceyourshake"><button class="back">Back</button></a>
+      <button ng-click="addExtra(addExtraForm)">Next</button>
+      <a href="nameyourrecipe" class="skip">Skip</a>
+      <!--
+      <div ng-show="submitted && addExtraForm.$invalid" class="error">
+        <p>You have some errors in your form, please fix it.</p>
+      </div>
+      -->
+    </div>
+
+  </form>
+  
+</div>
 
 <div ng-include="'nav.html'"></div>
