@@ -1,8 +1,41 @@
 <div ng-include="'header.html'"></div>
+
 <div class="container">
   <p>{{BBrecipeToDisplay.shakeType}}</p>
   <p>{{BBrecipeToDisplay.shakeName}}</p>
   <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
   <p ng-repeat="d in BBrecipeToDisplay.shakeNutrition">{{d}}</p>
 </div>
+
+<div class="container">
+
+	<div class="shake">
+
+		<div class="shake__container shake__container--{{y.shakeType}}">
+			<h3 class="shake__name">{{BBrecipeToDisplay.shakeName}}</h3>
+		</div>
+		
+	</div>
+
+	<ul class="review">
+		<li><strong>1 serving:</strong> {{BBrecipeToDisplay.shakeFlavor}}</li>
+		<li ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</li>
+		<li ng-repeat="d in BBrecipeToDisplay.shakeNutrition">{{d}}</li>
+		<li><strong>Calories:</strong> {{calories}} <small> Sample only</small></li>
+		<li><strong>Nutrition Facts:</strong> {{nutritionFacts}} <small> Sample only</small></li>
+	</ul>
+
+	<div class="button-group">
+		<a href="nameyourrecipe"><button class="back">Back</button></a>
+	    <button ng-click="saveYourRecipe()">Save</button>
+	</div>
+	
+</div>
+
+<h4> Main Recipe Details page</h4>
+<p>{{BBrecipeToDisplay.shakeFlavor}}</p>
+<p>{{BBrecipeToDisplay.enhancement}}</p>
+<p>@TonyHorton</p>
+
 <div ng-include="'nav.html'"></div>
+
