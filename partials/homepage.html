@@ -3,66 +3,21 @@
 <div class="heading">Find a Recipe</div>
 
 <div class="container">
-<!-- 	<div ng-include="'search.html'"></div>-->
+<!--  <div ng-include="'search.html'"></div>-->
 <div class="search-bar">
   <input type="search" ng-change="searchShakes(search.$)" placeholder="Search" ng-model="search.$">
 </div>
 
   <h3 ng-show="searchInProgress">Showing Search results for {{searchTerm}}</h3>
-	
-     <div ng-repeat="x in shakes | filter:search">
-      <p>Shake Flavor: {{x.shakeFlavor}}</p>
-      <div ng-repeat="y in x.shakeAttributes | filter:search">
-        <img src="{{y.shakeImg}}">
-        <p>{{y.shakeName}}</p>
-        <p>1 scoop {{x.shakeFlavor}}</p>
-        <p ng-repeat="z in y.shakeAddons">{{z}}</p>
-        <div class="nutrition">
-          <h3>Nutrition Facts</h3>
-          <p>Amount Per Serving</p>
-          <ul>
-            <li>Calories: {{y.shakeNutrition.calories}}</li>
-            <li>Total Fat: {{y.shakeNutrition.fat}}</li>
-            <li>Saturated Fat: {{y.shakeNutrition.satFat}}</li>
-            <li>Cholesterol: {{y.shakeNutrition.cholesterol}}</li>
-            <li>Sodium: {{y.shakeNutrition.sodium}}</li>
-            <li>Total Carbohydrate: {{y.shakeNutrition.carbs}}</li>
-            <li>Dietary Fiber: {{y.shakeNutrition.fiber}}</li>
-            <li>Sugars: {{y.shakeNutrition.sugars}}</li>
-            <li>Protein: {{y.shakeNutrition.protein}}</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Portions <span>(per serving)</span></h3>
-          <div>
-            <div>P90X + P90X2</div>
-            <div style="display: flex; justify-content: space-between;">
-              <div ng-repeat="z in y.shakeXX">{{z}}</div>
-            </div>
-          </div>
-          <div>
-            <div>P90X3</div>
-            <div style="display: flex; justify-content: space-between;">
-              <div ng-repeat="z in y.shakeX3">{{z}}</div>
-            </div>
-          </div>
-          <div>
-            <div>Body Beast</div>
-            <div style="display: flex; justify-content: space-between;">
-              <div ng-repeat="z in y.shakeBB">{{z}}</div>
-            </div>
-          </div>
-          <div>
-            <div>Containers</div>
-            <div style="display: flex; justify-content: space-between;">
-              <div ng-repeat="z in y.shakeContainer">{{z}}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p>=========================</p>
-    </div>
+  
+     <ul class="shake" ng-repeat="x in shakes | filter:search">
+      <li class="shake__container shake__container--{{y.shakeType}}" ng-repeat="y in x.shakeAttributes | filter:search">
+        <h3 class="shake__name">{{y.shakeName}}</h3>
+        <p class="shake__submitter">@beachbody</p>
+        <span class="shake__calories">{{y.shakeNutrition.calories}} Cal.</span>
+        <span class="shake__favorites">637</span>
+      </li>
+    </ul>
 
 </div>
 

@@ -177,3 +177,51 @@ nav.bottom {
 		}
 	}
 }
+.shake {
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+  &__container {
+    background: #f6f6f8;
+    border-top: 1px solid #dfdee6;
+    border-bottom: 1px solid #dfdee6;
+    padding: 10px 10px 10px 65px;
+    &--chocolate {
+      background: #f6f6f8 url('../img/shakeology-chocolate.png') no-repeat left;
+    }
+    &--vanilla {
+      background: #f6f6f8 url('../img/shakeology-vanilla.png') no-repeat left;
+    }
+    &--greenberry {
+      background: #f6f6f8 url('../img/shakeology-greenberry.png') no-repeat left;
+    }
+    &--strawberry {
+      background: #f6f6f8 url('../img/shakeology-strawberry.png') no-repeat left;
+    }
+    &--latte {
+      background: #f6f6f8 url('../img/shakeology-cafe-latte.png') no-repeat left;
+    }
+  }
+  &__name {
+    color: #33392d;
+    margin: 0 0 5px 0;
+  }
+  &__submitter {
+    color: #6f7566;
+    margin: 0 0 5px 0;
+  }
+  &__calories {
+    background: url('../img/icon-calories.svg') no-repeat left;
+    color: #b0b2ad;
+    font-size: 13px;
+    padding-left: 20px;
+  }
+  &__favorites {
+    background: url('../img/icon-favorites.svg') no-repeat left;
+    color: #b0b2ad;
+    color: #b0b2ad;
+    font-size: 13px;
+    padding-left: 20px;
+    margin-left: 25px;
+  }
+}
