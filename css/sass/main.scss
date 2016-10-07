@@ -323,4 +323,23 @@ p.results-message {
   font-weight: 100;
 }
 
+.profile-info {
+  display: inline-block;
+  margin-top: -20px;
+  padding: 0 10px;
+  font-size: 0.8em;
+  color: $dark-gray;
+
+  img {
+    display: block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  span {
+    font-size: 0.85em;
+  }
+
+}
+
 @import "create";

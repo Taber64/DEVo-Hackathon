@@ -2,20 +2,12 @@
 
 <div class="heading">My Profile</div>
 
-
-<!--
 <div class="container">
-  <div class="recipe-container">
-    <div class="">
-      <h3>{{BBrecipeToDisplay.shakeName}}</h3>
-      <p>@{{BBrecipeToDisplay.shakeCreator}}</p>
-    </div>
-    <p ng-repeat="c in BBrecipeToDisplay.shakeAddons">{{c}}</p>
-    <p>Nutrition Facts <span class="nutrition-light">Protein {{BBrecipeToDisplay.shakeNutrition.protein}}g, Carbs  {{BBrecipeToDisplay.shakeNutrition.carbs}}g, Fat {{BBrecipeToDisplay.shakeNutrition.fat}}g, Sodium {{BBrecipeToDisplay.shakeNutrition.sodium}}g, Fiber {{BBrecipeToDisplay.shakeNutrition.protein}}g<span></p>
-</div>
--->
-
-<div class="container">
+	<div class="profile-info">
+		<img src="../img/user.png" alt="user profile image">
+		<strong>Carl Daikeler</strong><br/>
+		<span>@CarlDaikeler</span>
+	</div>
 	<div class="recipe" ng-repeat="x in user__SavedRecipes">
 		<div class="recipe__container recipe__container--{{x.shakeType}}">
 	      <h3 class="recipe__name">{{x.shakeName}}</h3>
@@ -34,13 +26,13 @@
 	    <ul class="shake">
 	    	<li class="shake__container shake__container--greenberry" ng-click="openRecipePreview(x.shakeID)">
 		        <h3 class="shake__name ng-binding">Green Envy Shakeology</h3>
-		        <p class="shake__submitter ng-binding">@CarlDaikler</p>
+		        <p class="shake__submitter ng-binding">@CarlDaikeler</p>
 		        <span class="shake__calories ng-binding">238 Cal.</span>
 		        <span class="shake__favorites ng-binding">637</span>
 		      </li>
 	      <li class="shake__container shake__container--vanilla" ng-click="openRecipePreview(x.shakeID)">
 	        <h3 class="shake__name ng-binding">Cranberry Cookie Shakeology</h3>
-	        <p class="shake__submitter ng-binding">@CarlDaikler</p>
+	        <p class="shake__submitter ng-binding">@CarlDaikeler</p>
 	        <span class="shake__calories ng-binding">310 Cal.</span>
 	        <span class="shake__favorites ng-binding">291</span>
 	      </li>
