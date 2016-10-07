@@ -41,6 +41,16 @@ angular.module('DevoDemoApp', ['ngRoute']).config(['$routeProvider', '$locationP
   	templateUrl: '../partials/nameyourrecipe.html',
   	controller: 'createARecipeController'
   })
+  .when('/ideas',{
+    title: 'Ideas',
+    templateUrl: '../partials/ideas.html',
+    controller: 'homepageController'
+  })
+  .when('/user',{
+    title: 'Name Your Recipe',
+    templateUrl: '../partials/user.html',
+    controller: 'homepageController'
+  })
   .otherwise({
   	redirectTo: '/homepage'
   });
