@@ -9,7 +9,7 @@
 
    	//$scope.devTeam = "This is our Team. We rock";
 
- 	$http.get('../js/mock/shakeData.json').then(function(results){
+ 	$http.get('../js/mock/secondShake.json').then(function(results){
  		console.log(results);
  		$scope.shakes = results.data;
  	}).catch(function(errors){
@@ -36,6 +36,7 @@
    */
   $scope.openRecipePreview = function(id){
     allRecipesData.setRequestRecipeID(id); // Save the Id of the recipe to be viewed for later retrieval
+    console.log("id set "   + id);
     $location.path('/bbrecipe'); // go to the User saved recipes page
   }
 
