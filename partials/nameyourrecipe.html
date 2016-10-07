@@ -1,4 +1,6 @@
-<h2> NAME YOUR RECIPE</h2>
+<div ng-include="'header.html'"></div>
+
+<div class="heading"> NAME YOUR RECIPE</div>
 <form name="nameYourRecipeForm" novalidate>
   <p>
   	<input type="text" name="shakename" ng-model="personalizedShakeName" placeholder="Your Personalized Recipe Name" ng-required="true" ng-maxlength="50">
@@ -14,3 +16,5 @@
     </div>
 </form>
     <p> <a href="nameyourrecipe">Skip</a></p>
+
+<div ng-include="'nav.html'"></div>

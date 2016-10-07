@@ -1,4 +1,6 @@
-<h2> Add Extras</h2>
+<div ng-include="'header.html'"></div>
+
+<div class="heading"> Add Extras</div>
 <form name="addExtraForm" novalidate>
   <p>
   	<input type="text" name="extra1" ng-model="extras.extra1" placeholder="Extra Recipe - fruits, spices" ng-maxlength="50">
@@ -22,3 +24,5 @@
   	<p>You have some errors in your form, please fix it.</p>
     </div>
 </form>
+
+<div ng-include="'nav.html'"></div>
