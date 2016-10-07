@@ -1,18 +1,21 @@
 <div ng-include="'header.html'"></div>
 
-<div class="heading">CREATE A RECIPE</div>
-<div> 
-  <h2> ENHANCE YOUR SHAKEOLOGY</h2>
-  <form name="enhanceYourShakeForm" novalidate>
-    <p><input type="radio" name="flavor" value="Power Greens" ng-model="enhancementChoice"> POWER GREENS</p>
-    <p><input type="radio" name="flavor" value="Digestive Health" ng-model="enhancementChoice"> DIGESTIVE HEALTH </p>
-    <p><input type="radio" name="flavor" value="Focused Energy" ng-model="enhancementChoice"> FOCUSED ENERGY </p>
-    <div> 
-	  <button><a href="createarecipe">BACK</a></button>
-	  <button ng-click="enhancementSelected(enhanceYourShakeForm)">NEXT</button> 
+<div class="heading">Create a Recipe</div>
+
+<span class="step">2. Enhance Your Shakeology</span>
+
+<form name="enhanceYourShakeForm" novalidate>
+    
+  <label><input type="radio" name="flavor" value="Power Greens" ng-model="enhancementChoice"> Power Greens</label>
+  <label><input type="radio" name="flavor" value="Digestive Health" ng-model="enhancementChoice"> Digestive Health</label>
+  <label><input type="radio" name="flavor" value="Focused Energy" ng-model="enhancementChoice"> Focused Energy</label>
+
+  <div class="button-group"> 
+	  <a href="createarecipe"><button>BACK</button></a>
+	  <button ng-click="enhancementSelected(enhanceYourShakeForm)">NEXT</button>
+    <a href="addextras" class="skip">Skip</a>
   </div>
-  </form>
-  <a href="addextras">Skip</a>
-</div>
+
+</form>
 
 <div ng-include="'nav.html'"></div>
