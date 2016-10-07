@@ -1,5 +1,5 @@
- angular.module('DevoDemoApp').controller('createARecipeController',['$http','$location','$scope', '$rootScope','$window', 'recipeData',
- 	function($http,$location,$scope, $rootScope, $window, recipeData){
+ angular.module('DevoDemoApp').controller('createARecipeController',['$http','$location','$scope', '$rootScope','$window', 'recipeData', 'allRecipesData',
+ 	function($http,$location,$scope, $rootScope, $window, recipeData, allRecipesData){
 
    	$window.document.title = "Create a Recipe";
 
@@ -122,19 +122,98 @@
    	};
 
    	$scope.nameyourRecipe = function(nameYourRecipeForm){    
-         $scope.submitted = true;  
-         if(nameYourRecipeForm.$invalid) {
-   			return false; // The form was not filled properly
-   		}
-   		else { // the form is valid
-   			console.log("personalized name: " + $scope.personalizedShakeName);
-            recipeData.setPersonalizedName($scope.personalizedShakeName);
-            recipeData.setCalories(); // set the sample Data - no values passed
-            recipeData.setNutritionFacts();
+        $scope.submitted = true;  
+        
+        if(nameYourRecipeForm.$invalid) {
+   			 return false; // The form was not filled properly
+   		  }
+     		else { // the form is valid
+     			console.log("personalized name: " + $scope.personalizedShakeName);
+          recipeData.setPersonalizedName($scope.personalizedShakeName);
+          recipeData.setCalories(); // set the sample Data - no values passed
+          recipeData.setNutritionFacts();
 
-            $location.path('/reviewyourrecipe');
+          $location.path('/reviewyourrecipe');
 
-   		}
+     		}
 
    	};
+
+
+      /*
+       * Saving the User Created Recipe in both the actual main BB Shakes JSON 
+       * and the user JSON which will be shown only on a User Page
+       */
+      $scope.saveYourRecipe = function(){
+
+        console.log("Here saveYourRecipe");
+
+         // var temp_userSavedRecipes = {
+         //  flavorChoice: recipeData.getFlavor(),
+         //  enhancement: recipeData.getEnhancement(),
+         //  extras: recipeData.getExtras(),
+         //  personalizedShakeName: recipeData.getpersonalizedName(),
+         //  calories: recipeData.calories(),
+         //  nutritionFacts: recipeData.nutritionFacts()
+         // }
+
+         var temp_userSavedRecipes = {};
+         $scope.userCreatedRecipes = [];
+
+         $http.get('../js/mock/shakeData.json').then(function(results){
+            console.log(results);
+            $scope.BBshakes = results.data;
+            $scope.len = $scope.BBshakes.length + 1; //increment the id
+             console.log("Len 1: " + $scope.len);
+
+            temp_userSavedRecipes = {
+              "shakeID" : $scope.len, // a number as id
+                "shakeImg" : "https://img1.beachbodyimages.com/beachbody/image/upload/c_crop,h_385,w_770,x_0,y_0/v1472687788/Orange_Creamsicle_Shakeology.jpg",
+                "shakeName": $scope.personalizedShakeName,
+                "shakeAddons": $scope.extras,
+                "shakeNutrition": {
+                  "calories": $scope.calories,
+                  "fat": "2",
+                  "satFat": "0",
+                  "cholesterol": "7",
+                  "sodium": "258",
+                  "carbs": "33",
+                  "fiber": "3",
+                  "sugars": "24",
+                  "protein": "21"
+                },
+                "shakeXX": ["1 Protein", "½ Single Serving Snack", "1 Fruit"],
+                "shakeX3": ["1 ½ Carb", "1 Protein", ""],
+                "shakeBB": ["1 Protein Liquid","1 Carb Liquid","1 Balanced Liquid"],
+                "shakeContainer": ["1 Yellow", "1 Red", ""],
+                "enhancement": $scope.enhancementChoice
+            };
+
+            $scope.BBshakes.push(temp_userSavedRecipes);
+
+            console.log("Added the temp: " + $scope.BBshakes); // show incremented obj
+
+            allRecipesData.setBBShakes($scope.BBshakes); // Set the main Obj
+
+            $scope.userCreatedRecipes.push(temp_userSavedRecipes); // save Recipe for User Page Only
+
+            console.log($scope.userCreatedRecipes);
+
+            allRecipesData.setUserRecipes($scope.userCreatedRecipes); // Set user Recipes
+
+            // console.log(temp_userSavedRecipes.shakeID);
+
+            // var modified_UserShakesData = $scope.createMockObj($scope.BBshakes.length);
+            // console.log(modified_UserShakesData);
+            //we are going to save the Original BB Shakes recipe
+          
+         }).catch(function(errors){
+            console.log("Error occurred");
+         });
+         
+
+         $location.path('/user'); //go to the user profile - Loggedin Assumed
+
+          console.log("Temp User Saved Recipe: " + temp_userSavedRecipes);
+      };
  }]);

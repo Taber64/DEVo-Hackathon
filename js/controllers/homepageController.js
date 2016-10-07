@@ -4,8 +4,8 @@
  * @controller:  Hompage Controller functions
  */
 
- angular.module('DevoDemoApp').controller('homepageController',['$http','$location','$scope', '$rootScope','$window', 
- 	function($http,$location,$scope, $rootScope, $window){
+ angular.module('DevoDemoApp').controller('homepageController',['$http','$location','$scope', '$rootScope','$window', 'allRecipesData',
+ 	function($http,$location,$scope, $rootScope, $window, allRecipesData){
 
    	//$scope.devTeam = "This is our Team. We rock";
 
@@ -30,6 +30,15 @@
   	
   	//console.log("String Being Searched: " + str);
   }
+
+  /*
+   * Find the Recipe to be Previewed and Show it using the passed ID
+   */
+  $scope.openRecipePreview = function(id){
+    allRecipesData.setRequestRecipeID(id); // Save the Id of the recipe to be viewed for later retrieval
+    $location.path('/bbrecipe'); // go to the User saved recipes page
+  }
+
 
   //THE CODE BELOW WORKS FOR shakeName Search
  	// $http.get('../js/mock/shakeData.json').then(function(results){

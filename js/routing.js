@@ -49,12 +49,22 @@ angular.module('DevoDemoApp', ['ngRoute']).config(['$routeProvider', '$locationP
   .when('/user',{
     title: 'Name Your Recipe',
     templateUrl: '../partials/user.html',
-    controller: 'homepageController'
+    controller: 'userProfileController'
   })
-    .when('/reviewyourrecipe',{
+  .when('/reviewyourrecipe',{
     title: 'Name Your Recipe',
     templateUrl: '../partials/reviewyourrecipe.html',
     controller: 'createARecipeController'
+  })
+  .when('/savedrecipes',{
+    title: 'User Saved Recipes',
+    templateUrl: '../partials/userrecipedetails.html',
+    controller: 'recipeDetailsController'
+  })
+  .when('/bbrecipe',{
+    title: 'Name Your Recipe',
+    templateUrl: '../partials/bbrecipedetails.html',
+    controller: 'BBrecipeDetailsController'   
   })
   .otherwise({
   	redirectTo: '/homepage'
