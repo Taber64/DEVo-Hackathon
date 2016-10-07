@@ -1,0 +1,21 @@
+<h2>CREATE A RECIPE</h2>
+<div> 
+  <h2> SELECT A FLAVOR</h2>
+  <form name="selectAFlavorForm" novalidate>
+    <p><input type="radio" name="flavor" value="vanilla" ng-model="flavorChoice" ng-required="true"> VANILLA </p>
+    <p><input type="radio" name="flavor" value="chocolate" ng-model="flavorChoice" ng-required="true"> CHOCOLATE </p>
+    <p><input type="radio" name="flavor" value="strawberry" ng-model="flavorChoice" ng-required="true"> STRAWBERRY </p>
+    <p><input type="radio" name="flavor" value="cafe latte" ng-model="flavorChoice" ng-required="true"> CAFE LATTE </p>
+    <p><input type="radio" name="flavor" value="greenberry" ng-model="flavorChoice" ng-required="true"> GREENBERRY </p>
+    <p><input type="radio" name="flavor" value="chocolate" ng-model="flavorChoice" ng-required="true"> CHOCOLATE VEGAN</p>
+    <p><input type="radio" name="flavor" value="strawberry vegan" ng-model="flavorChoice" ng-required="true"> STRAWBERRY VEGAN </p>
+    <div> 
+	  <button ng-click="">BACK</button>
+	  <button ng-click="flavorSelected(selectAFlavorForm)">NEXT</button> 
+  </div>
+  <div ng-show="submitted && selectAFlavorForm.$invalid">
+  	<p>Please Select a Flavor to Continue</p>
+  </div>
+  </form>
+  
+</div>

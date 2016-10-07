@@ -9,19 +9,39 @@
 angular.module('DevoDemoApp', ['ngRoute']).config(['$routeProvider', '$locationProvider', 
 	function($routeProvider, $locationProvider) {
 
-  $locationProvider.html5Mode(true); // this is important for state routing using no Hashbang
+		$locationProvider.html5Mode(true); // this is important for state routing using no Hashbang
 
   $routeProvider
   .when('/login', {
-    templateUrl: 'login.html',
+    templateUrl: '../partials/login.html',
     controller: 'loginController'
   }).
   when('/homepage',{
   	title: 'Main Homepage',
-  	templateUrl: 'homepage.html',
+  	templateUrl: '../partials/homepage.html',
   	controller: 'homepageController'
   }).
-  otherwise({
+  when('/createarecipe',{
+  	title: 'Create A Recipe',
+  	templateUrl: '../partials/createarecipe.html',
+  	controller: 'createARecipeController'
+  }).
+  when('/enhanceyourshake',{
+  	title: 'Enhance Your Shakeology',
+  	templateUrl: '../partials/enhanceyourshakeology.html',
+  	controller: 'createARecipeController'
+  }).
+  when('/addextras',{
+  	title: 'Add Extras',
+  	templateUrl: '../partials/addextras.html',
+  	controller: 'createARecipeController'
+  })
+  .when('/nameyourrecipe',{
+  	title: 'Name Your Recipe',
+  	templateUrl: '../partials/nameyourrecipe.html',
+  	controller: 'createARecipeController'
+  })
+  .otherwise({
   	redirectTo: '/homepage'
   });
 }])

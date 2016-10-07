@@ -1,0 +1,16 @@
+<h2> NAME YOUR RECIPE</h2>
+<form name="nameYourRecipeForm" novalidate>
+  <p>
+  	<input type="text" name="shakename" ng-model="personalizedShakeName" placeholder="Your Personalized Recipe Name" ng-required="true" ng-maxlength="50">
+    <span ng-show="nameYourRecipeForm.shakename.$error.maxlength">Maximum characters exceeded, only 50 allowed</span>
+    <span ng-show="submitted && nameYourRecipeForm.shakename.$error.required">Your Recipe name is required </span>
+  </p>
+  <div> 
+	  <button><a href="addextras">BACK</a></button>
+	  <button ng-click="nameyourRecipe(nameYourRecipeForm)">NEXT</button> 
+  </div>
+    <p> <a href="nameyourrecipe">Skip</a></p>
+    <div ng-show="submitted && nameYourRecipeForm.$invalid">
+  	<p>You have some errors in your form, please correct it.</p>
+    </div>
+</form>

@@ -1,5 +1,5 @@
 /*
- * @Author: Philip Emokpare
+ * @Authors: Philip Emokpare, Sam Richardson, Kevin Taber
  * Description: This module handles the running of the App
  * 
  */

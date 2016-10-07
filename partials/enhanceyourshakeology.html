@@ -1,0 +1,13 @@
+<h2>CREATE A RECIPE</h2>
+<div> 
+  <h2> ENHANCE YOUR SHAKEOLOGY</h2>
+  <form name="enhanceYourShakeForm" novalidate>
+    <p><input type="radio" name="flavor" value="Power Greens" ng-model="enhancementChoice"> POWER GREENS</p>
+    <p><input type="radio" name="flavor" value="Digestive Health" ng-model="enhancementChoice"> DIGESTIVE HEALTH </p>
+    <p><input type="radio" name="flavor" value="Focused Energy" ng-model="enhancementChoice"> FOCUSED ENERGY </p>
+    <div> 
+	  <button><a href="createarecipe">BACK</a></button>
+	  <button ng-click="enhancementSelected(enhanceYourShakeForm)">NEXT</button> 
+  </div>
+  </form>
+</div>
